@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Word Bridge: connect each English word to its picture. 1,000 words, 10 levels, spoken words and Arabic meanings.">
+<meta property="og:title" content="Word Bridge">
+<meta property="og:description" content="Word Bridge: connect each English word to its picture. 1,000 words, 10 levels, spoken words and Arabic meanings.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#D9F0FF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1430" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Word Bridge">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iMTEiIGZpbGw9IiNGRkM4M0QiLz48cGF0aCBkPSJNOCAzMHExNi0xNiAzMiAwIiBmaWxsPSJub25lIiBzdHJva2U9IiM4QTVBMkIiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTggMzBxMTYtMTYgMzIgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjNEM0EyIiBzdHJva2Utd2lkdGg9IjMuMiIgc3Ryb2tlLWRhc2hhcnJheT0iMi40IDMuNCIvPjxwYXRoIGQ9Ik04IDMwdjhNNDAgMzB2OCIgc3Ryb2tlPSIjMTcyMDNEIiBzdHJva2Utd2lkdGg9IjMuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Word Bridge</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Baloo+Bhaijaan+2:wght@500;700;800&family=Noto+Color+Emoji&display=swap">
+<style>
+/* Layout: a one-screen app. Words stand on the left bank, pictures on the right bank,
+   and the player builds a plank bridge across the river for every correct pair. */
+:root{
+  --sky:#D9F0FF; --sky-2:#BCE2FF; --river:#8CCBFA;
+  --ink:#17203D; --muted:#56628A;
+  --paper:#FFFFFF; --paper-2:#EAF4FF; --edge:#17203D;
+  --sun:#FFC83D; --on-accent:#17203D;
+  --good:#12A150; --good-bg:#D9F7E5; --bad:#E5484D; --bad-bg:#FFE1E2;
+  --rope:#8A5A2B; --plank:#D9A066; --shape:#6FA8FF; --blob-edge:#17203D;
+  --overlay:rgba(23,32,61,.5);
+  --font-ui:"Baloo Bhaijaan 2","Baloo 2",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+  --font-word:"Andika","Comic Sans MS","Trebuchet MS",system-ui,sans-serif;
+  --font-emoji:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --sky:#0D1430; --sky-2:#131C42; --river:#1D3F86;
+    --ink:#F1F4FF; --muted:#A7B2D8;
+    --paper:#1C2756; --paper-2:#27346F; --edge:#050919;
+    --sun:#FFC83D; --on-accent:#17203D;
+    --good:#35D083; --good-bg:#113B2A; --bad:#FF6B70; --bad-bg:#4A1A1E;
+    --rope:#B98045; --plank:#E8B878; --shape:#7FB2FF; --blob-edge:#E8ECFF;
+    --overlay:rgba(3,6,18,.66);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --sky:#0D1430; --sky-2:#131C42; --river:#1D3F86;
+  --ink:#F1F4FF; --muted:#A7B2D8;
+  --paper:#1C2756; --paper-2:#27346F; --edge:#050919;
+  --sun:#FFC83D; --on-accent:#17203D;
+  --good:#35D083; --good-bg:#113B2A; --bad:#FF6B70; --bad-bg:#4A1A1E;
+  --rope:#B98045; --plank:#E8B878; --shape:#7FB2FF; --blob-edge:#E8ECFF;
+  --overlay:rgba(3,6,18,.66);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:linear-gradient(180deg,var(--sky),var(--sky-2)) fixed;color:var(--ink);
+  font-family:var(--font-ui);font-size:16px;line-height:1.35;-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+button{font:inherit;color:inherit}
+h1,h2,h3,p{margin:0}
+#app{height:100%;max-width:640px;margin:0 auto;display:flex;flex-direction:column;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px 12px}
+.screen{flex:1;min-height:0;display:flex;flex-direction:column;gap:12px}
+.scroll{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;display:flex;flex-direction:column;gap:14px;padding:4px 4px 16px;margin:0 -4px}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.ico{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.ico.fill{fill:currentColor;stroke:none}
+[dir="rtl"] .flip{transform:scaleX(-1)}
+.emoji{font-family:var(--font-emoji);font-variant-emoji:emoji}
+
+/* top bar */
+.top{display:flex;align-items:center;gap:10px;min-height:52px}
+.top h1{font-size:22px;font-weight:800;letter-spacing:-.01em;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand{display:flex;align-items:center;gap:8px;flex:1;min-width:0}
+.brand svg{width:40px;height:40px;flex:none}
+.brand h1{font-size:24px}
+.top-actions{display:flex;gap:8px}
+
+/* buttons */
+.btn{font-weight:800;border:2.5px solid var(--edge);border-radius:16px;background:var(--paper);color:var(--ink);
+  padding:8px 16px;box-shadow:0 4px 0 var(--edge);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:48px;transition:transform .06s,box-shadow .06s;text-align:center}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--edge)}
+.btn.primary{background:var(--sun);color:var(--on-accent)}
+.btn.icon{width:48px;padding:0;flex:none}
+.btn.big{min-height:60px;font-size:19px;border-radius:20px;width:100%}
+.btn.wide{width:100%}
+.btn.danger{background:var(--bad-bg);border-color:var(--bad);box-shadow:0 4px 0 var(--bad)}
+.btn[disabled]{opacity:.5;cursor:default}
+
+/* home */
+.hero{background:var(--paper);border:2.5px solid var(--edge);border-radius:24px;box-shadow:0 6px 0 var(--edge);padding:14px;display:flex;flex-direction:column;gap:12px}
+.who{display:flex;align-items:center;gap:10px;background:none;border:0;padding:0;cursor:pointer;text-align:start;min-width:0}
+.who .av{width:52px;height:52px;border-radius:50%;background:var(--sun);border:2.5px solid var(--edge);display:grid;place-items:center;font-size:28px;flex:none}
+.who b{font-size:19px;font-weight:800;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.who small{color:var(--muted);font-size:13px;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{background:var(--paper-2);border-radius:14px;padding:8px 6px;text-align:center;min-width:0}
+.stat b{display:flex;align-items:center;justify-content:center;gap:5px;font-size:20px;font-weight:800;font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--muted);font-weight:500}
+.stat .ico{width:18px;height:18px}
+.row{display:flex;gap:10px}
+.row>*{flex:1;min-width:0}
+h2.sec{font-size:18px;font-weight:800;margin-top:4px}
+.levels{display:flex;flex-direction:column;gap:12px}
+.lvl{display:grid;grid-template-columns:60px 1fr auto;gap:12px;align-items:center;padding:10px 12px;border:2.5px solid var(--edge);border-radius:20px;
+  background:var(--paper);box-shadow:0 5px 0 var(--edge);text-align:start;width:100%;cursor:pointer;color:var(--ink)}
+.lvl:active{transform:translateY(3px);box-shadow:0 2px 0 var(--edge)}
+.lvl .badge{width:60px;height:60px;border-radius:50%;background:var(--c);border:2.5px solid var(--edge);display:grid;place-items:center;font-size:32px}
+.lvl .name{font-weight:800;font-size:17px;line-height:1.15}
+.lvl .meta{font-size:13px;color:var(--muted);font-weight:500;font-variant-numeric:tabular-nums}
+.lvl .side{display:flex;flex-direction:column;align-items:flex-end;gap:2px;font-weight:800;font-size:14px;font-variant-numeric:tabular-nums}
+.lvl .side .ico{width:18px;height:18px}
+.lvl.locked .badge{filter:grayscale(1);opacity:.55}
+.lvl.locked .name,.lvl.locked .meta{opacity:.6}
+.bar{height:10px;border-radius:99px;background:var(--paper-2);border:2px solid var(--edge);overflow:hidden;margin-top:5px}
+.bar>i{display:block;height:100%;background:var(--c,var(--sun));width:var(--p,0%)}
+.foot{font-size:13px;color:var(--muted);text-align:center;font-weight:500}
+.notice{background:var(--paper);border:2px dashed var(--muted);border-radius:14px;padding:10px 12px;font-size:14px;font-weight:500}
+
+/* level path */
+.lvl-head{display:flex;align-items:center;gap:12px;background:var(--c);color:var(--on-accent);border:2.5px solid var(--edge);border-radius:20px;padding:10px 14px;box-shadow:0 5px 0 var(--edge)}
+.lvl-head .m{font-size:40px;line-height:1}
+.lvl-head b{font-size:19px;font-weight:800;display:block;line-height:1.15}
+.lvl-head span{font-size:13px;font-weight:700}
+.path{display:flex;flex-direction:column;align-items:center;gap:16px;padding:10px 0 30px}
+.node{display:flex;flex-direction:column;align-items:center;gap:4px;transform:translateX(var(--dx,0));background:none;border:0;color:var(--ink);cursor:pointer;padding:0;width:170px}
+.node .disc{width:76px;height:76px;border-radius:50%;background:var(--c);border:3px solid var(--edge);box-shadow:0 6px 0 var(--edge);display:grid;place-items:center;font-size:36px;position:relative;transition:transform .06s,box-shadow .06s}
+.node:active .disc{transform:translateY(4px);box-shadow:0 2px 0 var(--edge)}
+.node.locked .disc{background:var(--paper-2)}
+.node.locked .disc .emoji{filter:grayscale(1);opacity:.45}
+.node .lockbadge{position:absolute;inset-inline-end:-6px;bottom:-4px;width:28px;height:28px;border-radius:50%;background:var(--paper);border:2px solid var(--edge);display:grid;place-items:center}
+.node .lockbadge .ico{width:15px;height:15px}
+.node.next .disc{animation:bob 1.3s ease-in-out infinite}
+.node .lbl{font-weight:800;font-size:14px;text-align:center;line-height:1.15}
+.node .tag{font-size:12px;color:var(--muted);font-weight:500}
+.stars{display:inline-flex;gap:2px;color:var(--sun)}
+.stars .ico{width:16px;height:16px;stroke:var(--edge);stroke-width:1.6;fill:var(--paper-2)}
+.stars .ico.on{fill:var(--sun)}
+
+/* play */
+.dots{display:flex;gap:6px;flex:1;justify-content:center;align-items:center;min-width:0}
+.dots i{width:100%;max-width:44px;height:10px;border-radius:99px;background:var(--paper);border:2px solid var(--edge)}
+.dots i.on{background:var(--good)}
+.dots i.cur{background:var(--sun)}
+.hint{text-align:center;font-weight:700;font-size:15px;min-height:22px}
+.board{position:relative;flex:1;min-height:250px;display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(50px,16vw,128px);
+  touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.board::before{content:"";position:absolute;top:-2px;bottom:-2px;left:50%;width:clamp(26px,9vw,68px);transform:translateX(-50%);border-radius:99px;
+  background:var(--river);opacity:.42}
+.col{display:grid;grid-template-rows:repeat(4,minmax(0,1fr));gap:10px;min-height:0;position:relative;z-index:2}
+.wires{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;overflow:visible}
+.card{position:relative;display:flex;align-items:center;justify-content:center;min-height:54px;padding:4px 8px;background:var(--paper);
+  border:2.5px solid var(--edge);border-radius:18px;box-shadow:0 4px 0 var(--edge);cursor:pointer;transition:transform .08s,background .15s;min-width:0}
+.card.sel{background:var(--sun);color:var(--on-accent);transform:translateY(-3px);box-shadow:0 7px 0 var(--edge)}
+.card.done{background:var(--good-bg);border-color:var(--good);box-shadow:0 2px 0 var(--good);cursor:default}
+.card.bad{background:var(--bad-bg);border-color:var(--bad);animation:shake .36s}
+.card.word{flex-direction:column;gap:1px}
+.w-text{font-family:var(--font-word);font-weight:700;font-size:calc(clamp(18px,5.6vw,29px)*var(--k,1));line-height:1.12;text-align:center}
+.w-ar{font-size:13px;font-weight:700;color:var(--muted);direction:rtl;line-height:1.2;text-align:center}
+.card.sel .w-ar{color:var(--on-accent)}
+.w-ear{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--paper-2);border:2px solid var(--edge);color:var(--ink)}
+.w-ear .ico{width:26px;height:26px}
+.card.pic{--pic:clamp(30px,7.4vh,58px)}
+.emo{font-family:var(--font-emoji);font-variant-emoji:emoji;font-size:var(--pic,40px);line-height:1.1;white-space:nowrap;direction:ltr}
+.emo-2{font-size:calc(var(--pic,40px)*.74)}
+.emo-3{font-size:calc(var(--pic,40px)*.56)}
+.numwrap{font-size:var(--pic,40px);font-weight:800;line-height:1;font-variant-numeric:tabular-nums;direction:ltr}
+.blob,.shape{width:calc(var(--pic,40px)*1.12);height:calc(var(--pic,40px)*1.12);display:block}
+.shape *{fill:var(--shape);stroke:var(--blob-edge);stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
+.shape .open{fill:none;stroke-width:9}
+.cmp{display:inline-flex;align-items:flex-end;gap:6px;font-family:var(--font-emoji);line-height:1;direction:ltr}
+.cmp-b{font-size:var(--pic,40px)}
+.cmp-s{font-size:calc(var(--pic,40px)*.42)}
+.cmp.is-big .cmp-s,.cmp.is-small .cmp-b{opacity:.28;filter:grayscale(1)}
+.say{position:absolute;top:3px;right:3px;width:34px;height:34px;border-radius:50%;border:2px solid var(--edge);background:var(--paper-2);
+  display:grid;place-items:center;cursor:pointer;padding:0;color:var(--ink)}
+.say::after{content:"";position:absolute;inset:-7px}
+.say .ico{width:18px;height:18px}
+.say:active{transform:scale(.92)}
+.tick{position:absolute;top:-8px;left:-8px;width:24px;height:24px;border-radius:50%;background:var(--good);color:#fff;display:grid;place-items:center;border:2px solid var(--paper)}
+.tick .ico{width:13px;height:13px;stroke-width:3.4}
+.playfoot{min-height:64px;display:flex;align-items:center;justify-content:center;gap:10px}
+.playfoot .count{font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* results */
+.done{align-items:center;text-align:center}
+.done .scroll{align-items:center;width:100%}
+.bigstars{display:flex;gap:10px;justify-content:center;margin-top:8px}
+.bigstars .ico{width:70px;height:70px;stroke:var(--edge);stroke-width:1.3;fill:var(--paper-2)}
+.bigstars .ico.on{fill:var(--sun);animation:pop .5s both}
+.bigstars .ico.on:nth-child(2){animation-delay:.18s}
+.bigstars .ico.on:nth-child(3){animation-delay:.36s}
+.done h2{font-size:30px;font-weight:800;line-height:1.1}
+.done .sub{color:var(--muted);font-weight:700}
+.unlock{background:var(--c);color:var(--on-accent);border:2.5px solid var(--edge);border-radius:18px;padding:10px 14px;font-weight:800;box-shadow:0 4px 0 var(--edge)}
+.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:8px;width:100%}
+.chip{display:flex;align-items:center;gap:8px;background:var(--paper);border:2px solid var(--edge);border-radius:14px;padding:6px 8px;cursor:pointer;text-align:start;min-width:0;color:var(--ink);--pic:26px}
+.chip .pc{width:44px;flex:none;display:grid;place-items:center;overflow:hidden}
+.chip .tx{min-width:0}
+.chip b{font-family:var(--font-word);font-size:15px;display:block;line-height:1.15;overflow-wrap:anywhere}
+.chip small{font-size:12px;color:var(--muted);font-weight:700;display:block;line-height:1.2}
+.stack{display:flex;flex-direction:column;gap:10px;width:100%}
+
+/* album + settings */
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.pill{border:2px solid var(--edge);border-radius:99px;background:var(--paper);padding:6px 14px;font-weight:800;font-size:14px;cursor:pointer;min-height:40px}
+.pill.on{background:var(--sun);color:var(--on-accent)}
+.empty{background:var(--paper);border:2.5px dashed var(--muted);border-radius:18px;padding:22px 16px;text-align:center;font-weight:700}
+.set{background:var(--paper);border:2.5px solid var(--edge);border-radius:18px;box-shadow:0 4px 0 var(--edge);padding:4px 14px}
+.set .line{display:flex;align-items:center;gap:12px;min-height:58px;border-top:2px solid var(--paper-2)}
+.set .line:first-child{border-top:0}
+.set .line>span{flex:1;min-width:0;font-weight:700}
+.set .line small{display:block;color:var(--muted);font-weight:500;font-size:13px}
+.seg{display:inline-flex;border:2px solid var(--edge);border-radius:12px;overflow:hidden;flex:none}
+.seg button{border:0;background:var(--paper);padding:8px 12px;font-weight:800;cursor:pointer;min-height:40px}
+.seg button.on{background:var(--sun);color:var(--on-accent)}
+.sw{width:56px;height:32px;border-radius:99px;border:2px solid var(--edge);background:var(--paper-2);position:relative;cursor:pointer;flex:none;padding:0}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:var(--muted);transition:transform .15s}
+.sw.on{background:var(--good)}
+.sw.on::after{transform:translateX(24px);background:#fff}
+select,input[type=text]{font:inherit;font-weight:700;color:var(--ink);background:var(--paper-2);border:2px solid var(--edge);border-radius:12px;padding:8px 10px;min-height:42px;max-width:100%}
+.players{display:flex;flex-direction:column;gap:10px}
+.pl{display:flex;align-items:center;gap:10px;background:var(--paper);border:2.5px solid var(--edge);border-radius:18px;padding:8px 10px;box-shadow:0 4px 0 var(--edge)}
+.pl.cur{background:var(--sun);color:var(--on-accent)}
+.pl .av{width:46px;height:46px;border-radius:50%;background:var(--paper-2);border:2px solid var(--edge);display:grid;place-items:center;font-size:24px;flex:none}
+.pl .nm{flex:1;min-width:0;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pl small{font-weight:500;display:block;font-size:12px;opacity:.8}
+.avs{display:flex;flex-wrap:wrap;gap:6px}
+.avs button{width:44px;height:44px;border-radius:50%;border:2px solid var(--edge);background:var(--paper-2);font-size:22px;cursor:pointer;padding:0}
+.avs button.on{background:var(--sun)}
+.form{background:var(--paper);border:2.5px solid var(--edge);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:10px}
+.form label{font-weight:800;font-size:14px}
+
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+#toast{position:fixed;left:50%;top:calc(72px + env(safe-area-inset-top,0px));transform:translateX(-50%);background:var(--ink);color:var(--sky);
+  padding:10px 16px;border-radius:14px;font-weight:700;font-size:14px;z-index:60;max-width:min(92vw,460px);text-align:center;box-shadow:0 6px 18px var(--overlay)}
+
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-5px)}80%{transform:translateX(4px)}}
+@keyframes pop{0%{transform:scale(.2) rotate(-25deg);opacity:0}70%{transform:scale(1.18) rotate(6deg);opacity:1}100%{transform:scale(1) rotate(0)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes draw{from{stroke-dashoffset:var(--len)}to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+@media (max-height:520px){.hint{display:none}.playfoot{min-height:52px}.col{gap:6px}.card{min-height:44px}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<script type="application/json" id="wb-data">{"words":[["red","c:#E53935","أحمر","a","colors",1,[],1],["blue","c:#1E88E5","أزرق","a","colors",1,[],1],["green","c:#43A047","أخضر","a","colors",1,[],1],["yellow","c:#FDD835","أصفر","a","colors",1,[],1],["orange","c:#FB8C00","برتقالي","a","colors",1,[56],1],["pink","c:#F48FB1","وردي","a","colors",1,[],1],["black","c:#1B1B1B","أسود","a","colors",1,[],1],["white","c:#FFFFFF","أبيض","a","colors",1,[],1],["zero","n:0","صفر","m","numbers",1,[],1],["one","n:1","واحد","m","numbers",1,[],1],["two","n:2","اثنان","m","numbers",1,[],1],["three","n:3","ثلاثة","m","numbers",1,[],1],["four","n:4","أربعة","m","numbers",1,[],1],["five","n:5","خمسة","m","numbers",1,[],1],["six","n:6","ستة","m","numbers",1,[],1],["seven","n:7","سبعة","m","numbers",1,[],1],["eight","n:8","ثمانية","m","numbers",1,[],1],["nine","n:9","تسعة","m","numbers",1,[],1],["ten","n:10","عشرة","m","numbers",1,[],1],["hundred","n:100","مئة","m","numbers",1,[],1],["water","💧","ماء","n","food",1,[],1],["food","🥘","طعام","n","food",1,[],1],["face","🙂","وجه","n","people",1,[47],1],["game","🎮","لعبة","n","school",1,[],1],["hand","✋","يد","n","people",1,[],1],["dog","🐶","كلب","n","animals",1,[144],1],["time","🕒","وقت","n","home",1,[11],1],["people","👥","ناس","n","people",1,[157],1],["fish","🐟","سمكة","n","animals",1,[],1],["cat","🐱","قطة","n","animals",1,[143],1],["horse","🐴","حصان","n","animals",1,[],1],["train","🚆","قطار","n","world",1,[53],1],["eye","👁️","عين","n","people",1,[],1],["bear","🐻","دب","n","animals",1,[],1],["up","⬆️","أعلى","a","describe",1,[54,84],1],["world","🌍","العالم","n","nature",1,[55,88],1],["apple","🍎","تفاحة","n","food",1,[102],1],["bird","🐦","طائر","n","animals",1,[141],1],["chicken","🐔","دجاجة","n","animals",1,[],1],["home","🏡","بيت","n","home",1,[20],1],["bag","👜","حقيبة","n","home",1,[],1],["think","🤔","يفكّر","v","actions",1,[232],1],["foot","🦶","قدم","n","people",1,[],1],["dress","👗","فستان","n","home",1,[],1],["lunch","🍱","غداء","n","food",1,[],1],["milk","🥛","حليب","n","food",1,[],1],["ball","🥎","كرة","n","fun",1,[1],1],["meat","🥩","لحم","n","food",1,[],1],["mouth","👄","فم","n","people",1,[],1],["man","👨","رجل","n","people",1,[],1],["orange","🍊","برتقالة","n","food",1,[56],1],["house","🏠","منزل","n","home",1,[20,133],1],["rice","🍚","أرز","n","food",1,[],1],["cake","🍰","كعكة","n","food",1,[108],1],["shirt","👕","قميص","n","home",1,[155],1],["good","👍","جيّد","a","describe",1,[152],1],["night","🌃","ليل","n","nature",1,[10],1],["school","🏫","مدرسة","n","school",1,[],1],["bread","🍞","خبز","n","food",1,[],1],["ice cream","🍦","آيس كريم","n","food",1,[107],1],["chocolate","🍫","شوكولاتة","n","food",1,[],1],["egg","🥚","بيضة","n","food",1,[],1],["family","👪","عائلة","n","people",1,[],1],["leg","🦵","ساق","n","people",1,[247],1],["car","🚗","سيارة","n","world",1,[7,219],1],["hat","👒","قبعة","n","home",1,[],1],["love","💕","يحب","v","actions",1,[19],1],["cap","🧢","قبعة رياضية","n","home",1,[],1],["like","❤️👍","يعجبه","v","actions",1,[81,152],2],["look","👀","ينظر","v","actions",1,[146],1],["mouse","🐭","فأر","n","animals",1,[142],1],["drink","🍹","يشرب","v","actions",1,[],1],["tiger","🐯","نمر","n","animals",1,[],1],["pants","👖","بنطال","n","home",1,[156],1],["juice","🧃","عصير","n","food",1,[],1],["right","➡️","يمين","a","describe",1,[39,83],1],["person","🧑","شخص","n","people",1,[27],1],["spider","🕷️","عنكبوت","n","animals",1,[],1],["watch","⌚","ساعة يد","n","home",1,[11],1],["snake","🐍","ثعبان","n","animals",1,[],1],["duck","🦆","بطة","n","animals",1,[],1],["nose","👃","أنف","n","people",1,[148],1],["candy","🍬","حلوى","n","food",1,[],1],["sheep","🐑","خروف","n","animals",1,[],1],["down","⬇️","أسفل","a","describe",1,[85],1],["please","🥺","من فضلك","o","actions",1,[],1],["cow","🐮","بقرة","n","animals",1,[],1],["glasses","👓","نظارة","n","home",1,[],1],["money","💵","نقود","n","school",1,[174],1],["road","🛣️","طريق","n","world",1,[],1],["book","📕","كتاب","n","school",1,[3],1],["boots","👢","حذاء طويل","n","home",1,[],1],["ear","👂","أذن","n","people",1,[147],1],["friends","🧑‍🤝‍🧑","أصدقاء","n","people",1,[],1],["light","💡","مصباح","n","home",1,[167],1],["morning","🌅","صباح","n","nature",1,[51,86],1],["music","🎵","موسيقى","n","fun",1,[32,119],1],["city","🏙️","مدينة","n","world",1,[10],1],["cup","🥤","كوب","n","food",1,[244],1],["heart","❤️","قلب","n","people",1,[81],1],["purple","c:#8E24AA","بنفسجي","a","colors",2,[],1],["brown","c:#795548","بنّي","a","colors",2,[],1],["gray","c:#9E9E9E","رمادي","a","colors",2,[],1],["circle","s:circle","دائرة","n","colors",2,[],1],["square","s:square","مربّع","n","colors",2,[],1],["triangle","s:triangle","مثلّث","n","colors",2,[],1],["rectangle","s:rectangle","مستطيل","n","colors",2,[],1],["oval","s:oval","شكل بيضاوي","n","colors",2,[],1],["line","s:line","خطّ","n","colors",2,[],1],["arrow","s:arrow","سهم","n","colors",2,[],1],["hexagon","s:hexagon","شكل سداسي","n","colors",2,[],1],["colors","🔴🟡🔵","ألوان","n","colors",2,[],3],["eleven","n:11","أحد عشر","m","numbers",2,[],1],["twelve","n:12","اثنا عشر","m","numbers",2,[],1],["thirteen","n:13","ثلاثة عشر","m","numbers",2,[],1],["fourteen","n:14","أربعة عشر","m","numbers",2,[],1],["fifteen","n:15","خمسة عشر","m","numbers",2,[],1],["sixteen","n:16","ستة عشر","m","numbers",2,[],1],["seventeen","n:17","سبعة عشر","m","numbers",2,[],1],["eighteen","n:18","ثمانية عشر","m","numbers",2,[],1],["nineteen","n:19","تسعة عشر","m","numbers",2,[],1],["twenty","n:20","عشرون","m","numbers",2,[],1],["thousand","n:1,000","ألف","m","numbers",2,[],1],["half","n:½","نصف","m","numbers",2,[],1],["play","▶️","يشغّل","v","actions",2,[28,58],1],["fire","🔥","نار","n","nature",2,[199],1],["bee","🐝","نحلة","n","animals",2,[139],1],["pie","🥧","فطيرة","n","food",2,[],1],["dinner","🍽️🌙","عشاء","n","food",2,[90,110],2],["elephant","🐘","فيل","n","animals",2,[],1],["girl","👧","بنت","n","people",2,[159],1],["monkey","🐵","قرد","n","animals",2,[],1],["happy","😀","سعيد","a","describe",2,[18,47,211],1],["question","❓","سؤال","n","school",2,[80],1],["woman","👩","امرأة","n","people",2,[160],1],["read","📖","يقرأ","v","actions",2,[3,182],1],["shoe","👞","حذاء","n","home",2,[],1],["goat","🐐","ماعز","n","animals",2,[],1],["stop","🛑","يتوقّف","v","actions",2,[],1],["call","📞","يتصل","v","actions",2,[36],1],["potato","🥔","بطاطس","n","food",2,[],1],["child","🧒","طفل","n","people",2,[],1],["ice","🧊","جليد","n","food",2,[249],1],["lemon","🍋","ليمونة","n","food",2,[100],1],["party","🎉","حفلة","n","school",2,[34,115],1],["run","🏃","يجري","v","actions",2,[126],1],["star","⭐","نجمة","n","nature",2,[48],1],["hour","🕐","ساعة زمنية","n","home",2,[11],1],["open","🔓","يفتح","v","actions",2,[25],1],["big","big:🎈","كبير","a","describe",2,[45],1],["burger","🍔","برجر","n","food",2,[104],1],["baby","👶","رضيع","n","people",2,[],1],["father","👨‍👦","أب","n","people",2,[14],1],["mother","👩‍👧","أم","n","people",2,[14],1],["go","🚶➡️","يذهب","v","actions",2,[83,224],2],["picture","🖼️","لوحة","n","home",2,[207],1],["video","📹","فيديو","n","school",2,[6],1],["clothes","👕👖","ملابس","n","home",2,[155,156],2],["key","🔑","مفتاح","n","home",2,[],1],["left","⬅️","يسار","a","describe",2,[23],1],["strong","💪","قوي","a","describe",2,[170],1],["talk","🗣️","يتكلّم","v","actions",2,[209],1],["banana","🍌","موزة","n","food",2,[101],1],["pay","💸","يدفع","v","actions",2,[],1],["art","🎨","فن","n","fun",2,[117],1],["frog","🐸","ضفدع","n","animals",2,[],1],["door","🚪","باب","n","home",2,[223],1],["bed","🛏️","سرير","n","home",2,[228],1],["boy","👦","ولد","n","people",2,[158],1],["fruit","🍎🍌🍇","فاكهة","n","food",2,[99,101,102],3],["shorts","🩳","سروال قصير","n","home",2,[],1],["coffee","☕","قهوة","n","food",2,[61],1],["earth","🌎","الأرض","n","nature",2,[55],1],["hot","🥵","حارّ","a","describe",2,[],1],["sea","🌊","بحر","n","nature",2,[87],1],["song","🎶","أغنية","n","fun",2,[32,120],1],["work","🧑‍💻💼","يعمل","v","actions",2,[177,254],2],["cool","😎","رائع","a","describe",2,[],1],["wait","⏳","ينتظر","v","actions",2,[],1],["ask","🙋","يسأل","v","actions",2,[215],1],["box","📦","صندوق","n","home",2,[186],1],["robot","🤖","روبوت","n","people",2,[],1],["wall","🧱","جدار","n","home",2,[263],1],["bad","👎","سيّئ","a","describe",2,[153],1],["pain","😖","ألم","n","people",2,[],1],["rock","🪨","صخرة","n","nature",2,[],1],["ship","🚢","سفينة","n","world",2,[43],1],["socks","🧦","جوارب","n","home",2,[],1],["space","🌌","فضاء","n","nature",2,[],1],["page","📃","صفحة","n","school",2,[33],1],["small","small:🎈","صغير","a","describe",2,[45],1],["phone","📱","هاتف","n","school",2,[36],1],["serious","😐","جادّ","a","describe",2,[37],1],["thank you","🙏","شكرًا","o","actions",2,[],1],["building","🏢","مبنى","n","world",2,[134],1],["onion","🧅","بصل","n","food",2,[],1],["coconut","🥥","جوز الهند","n","food",2,[],1],["crazy","😜","مجنون","a","describe",2,[16],1],["paper","📄","ورقة","n","school",2,[33,178],1],["sun","☀️","شمس","n","nature",2,[50,59],1],["thirty","n:30","ثلاثون","m","numbers",3,[],1],["forty","n:40","أربعون","m","numbers",3,[],1],["fifty","n:50","خمسون","m","numbers",3,[],1],["sixty","n:60","ستّون","m","numbers",3,[],1],["seventy","n:70","سبعون","m","numbers",3,[],1],["eighty","n:80","ثمانون","m","numbers",3,[],1],["ninety","n:90","تسعون","m","numbers",3,[],1],["million","n:1,000,000","مليون","m","numbers",3,[],1],["billion","n:1,000,000,000","مليار","m","numbers",3,[],1],["first","🥇","الأول","a","numbers",3,[240],1],["second","🥈","الثاني","a","numbers",3,[],1],["third","🥉","الثالث","a","numbers",3,[],1],["team","⚽👥","فريق","n","people",3,[67,157],2],["doll","🪆","دمية","n","home",3,[],1],["fox","🦊","ثعلب","n","animals",3,[],1],["tomato","🍅","طماطم","n","food",3,[],1],["airport","🛫","مطار","n","world",3,[],1],["beans","🫘","فاصوليا","n","food",3,[],1],["brain","🧠","دماغ","n","people",3,[256],1],["bus","🚌","حافلة","n","world",3,[216],1],["rest","🛌","يرتاح","v","actions",3,[46],1],["tea","🍵","شاي","n","food",3,[],1],["cold","🥶","بارد","a","describe",3,[],1],["funny","🤪","مضحك","a","describe",3,[16],1],["science","🧪","علوم","n","nature",3,[260],1],["student","🧑‍🎓","طالب","n","people",3,[],1],["football","⚽","كرة القدم","n","fun",3,[1,67],1],["fries","🍟","بطاطس مقلية","n","food",3,[106],1],["ring","💍","خاتم","n","home",3,[164],1],["TV","📺","تلفاز","n","school",3,[190],1],["film","🎞️","شريط فيلم","n","school",3,[31],1],["plant","🪴","نبتة","n","nature",3,[],1],["wrong","❌","خطأ","a","describe",3,[79],1],["race","🏁","سباق","n","fun",3,[125],1],["sorry","🙇","آسف","o","actions",3,[],1],["van","🚐","فان","n","world",3,[],1],["bridge","🌉","جسر","n","world",3,[],1],["weather","🌦️","طقس","n","nature",3,[38,50],1],["bank","🏦","بنك","n","world",3,[],1],["evening","🌆","مساء","n","nature",3,[10,51],1],["find","🔍✅","يجد","v","actions",3,[71,194],2],["goal","🥅","مرمى","n","fun",3,[239],1],["movie","🎬","فيلم","n","school",3,[31],1],["park","🏞️","متنزّه","n","world",3,[],1],["wow","😮","يا للروعة","o","describe",3,[41],1],["help","🙋🤝","يساعد","v","actions",3,[215,234],2],["judge","🧑‍⚖️","قاضٍ","n","people",3,[],1],["letter","✉️","رسالة","n","school",3,[73],1],["sound","🔉","صوت","n","school",3,[26],1],["tree","🌳","شجرة","n","nature",3,[94],1],["health","❤️🩺","صحة","n","people",3,[81],2],["hurt","🤕","مصاب","a","describe",3,[44,233],1],["save","💾","يحفظ","v","actions",3,[],1],["stand","🧍","يقف","v","actions",3,[250],1],["wind","🌬️","رياح","n","nature",3,[92],1],["bowl","🥣","وعاء","n","food",3,[243],1],["eat","🍴","يأكل","v","actions",3,[],1],["grapes","🍇","عنب","n","food",3,[99],1],["lizard","🦎","سحلية","n","animals",3,[],1],["plane","✈️","طائرة","n","world",3,[72],1],["rose","🌹","وردة","n","nature",3,[15],1],["seat","💺","مقعد","n","home",3,[175],1],["boat","⛵","قارب","n","world",3,[2],1],["give","🤲🎁","يعطي","v","actions",3,[112,235],2],["rich","🤑","غني","a","describe",3,[],1],["send","📤","يرسل","v","actions",3,[42],1],["vote","🗳️","يصوّت","v","actions",3,[],1],["balloon","🎈","بالون","n","home",3,[114],1],["doctor","🧑‍⚕️","طبيب","n","people",3,[251],1],["oil","🛢️","نفط","n","school",3,[],1],["polar bear","🐻‍❄️","دب قطبي","n","animals",3,[],1],["salt","🧂","ملح","n","food",3,[],1],["teddy bear","🧸","دبدوب","n","home",3,[266],1],["window","🪟","نافذة","n","home",3,[],1],["gift","🎁","هدية","n","home",3,[112],1],["increase","📈","يزيد","v","actions",3,[9],1],["sick","🤒","مريض","a","describe",3,[44,231],1],["sign","🪧","لافتة","n","school",3,[],1],["teacher","🧑‍🏫","معلّم","n","people",3,[253],1],["walk","🚶","يمشي","v","actions",3,[224],1],["wood","🪵","خشب","n","nature",3,[270],1],["bottle","🍼","زجاجة","n","food",3,[],1],["cheese","🧀","جبن","n","food",3,[],1],["children","👧👦","أطفال","n","people",3,[158,159],2],["hospital","🏥","مستشفى","n","world",3,[],1],["king","🫅","ملك","n","people",3,[],1],["internet","🌐","إنترنت","n","school",3,[89],1],["library","📚","مكتبة","n","school",3,[3,183],1],["plate","🍽️","طبق","n","food",3,[110],1],["sleep","😴","ينام","v","actions",3,[46],1],["story","📖🐉","قصة","n","school",3,[137,182],2],["build","🏗️","يبني","v","actions",3,[],1],["card","💳","بطاقة بنكية","n","school",3,[],1],["news","📰📺","أخبار","n","school",3,[187,190],2],["sad","😢","حزين","a","describe",3,[40],1],["truck","🚚","شاحنة","n","world",3,[221],1],["early","🌅⏰","مبكّر","a","describe",3,[57,86],2],["medicine","💊","دواء","n","people",3,[],1],["smart","🤓","ذكي","a","describe",3,[],1],["write","✍️","يكتب","v","actions",3,[75],1],["age","🎂🔢","عمر","n","home",4,[113,197],2],["carrot","🥕","جزرة","n","food",4,[241],1],["profile","👤","ملف شخصي","n","people",4,[27],1],["sky","🌤️","سماء","n","nature",4,[50],1],["store","🏪","متجر","n","world",4,[49],1],["dragon","🐉","تنين","n","animals",4,[137],1],["island","🏝️","جزيرة","n","world",4,[],1],["radio","📻","راديو","n","school",4,[],1],["rain","🌧️","مطر","n","nature",4,[38],1],["artist","🧑‍🎨","رسّام","n","people",4,[],1],["message","💬","رسالة نصية","n","school",4,[171],1],["moon","🌙","قمر","n","nature",4,[30,90],1],["perfect","👌","ممتاز","a","describe",4,[],1],["chair","🪑","كرسي","n","home",4,[269],1],["crocodile","🐊","تمساح","n","animals",4,[],1],["history","🏛️📜","تاريخ","n","school",4,[131,184],2],["link","🔗","رابط","n","school",4,[],1],["shell","🐚","صدفة","n","animals",4,[],1],["pineapple","🍍","أناناس","n","food",4,[],1],["agree","🤝","يتّفق","v","actions",4,[234],1],["computer","🖥️","حاسوب","n","school",4,[12,205],1],["photo","📸","صورة","n","school",4,[6,189],1],["schedule","🗓️","جدول مواعيد","n","home",4,[5],1],["crown","👑","تاج","n","home",4,[154],1],["hole","🕳️","حفرة","n","nature",4,[],1],["idea","💡🧠","فكرة","n","school",4,[167,256],2],["mango","🥭","مانجو","n","food",4,[],1],["map","🗺️","خريطة","n","school",4,[210],1],["search","🔍","يبحث","v","actions",4,[194],1],["snow","❄️","ثلج","n","nature",4,[78],1],["start","▶️🏁","يبدأ","v","actions",4,[58,125],2],["storm","⛈️","عاصفة","n","nature",4,[38],1],["hotel","🏨","فندق","n","world",4,[],1],["wolf","🐺","ذئب","n","animals",4,[],1],["bull","🐂","ثور","n","animals",4,[4],1],["excited","🤩","متحمّس","a","describe",4,[],1],["late","⏰😰","متأخّر","a","describe",4,[57,213],2],["bike","🚲","دراجة","n","world",4,[],1],["dance","💃","يرقص","v","actions",4,[],1],["energy","⚡🔋","طاقة","n","nature",4,[66,192],2],["fast","💨","سريع","a","describe",4,[169],1],["guard","💂","حارس","n","people",4,[],1],["pizza","🍕","بيتزا","n","food",4,[105],1],["summer","☀️🏖️","صيف","n","nature",4,[59,130],2],["tell","🗣️👂","يخبر","v","actions",4,[147,209],2],["beach","🏖️","شاطئ","n","world",4,[130],1],["forward","⏩","إلى الأمام","a","describe",4,[28],1],["prince","🤴","أمير","n","people",4,[],1],["choose","☑️","يختار","v","actions",4,[13],1],["dream","💭","يحلم","v","actions",4,[172],1],["knife","🔪","سكين","n","food",4,[201],1],["tie","👔","ربطة عنق","n","home",4,[],1],["tired","😫","متعب","a","describe",4,[],1],["touch","👆","يلمس","v","actions",4,[54,150],1],["afraid","😰","خائف جدًا","a","describe",4,[41,213],1],["bat","🦇","خفاش","n","animals",4,[],1],["butter","🧈","زبدة","n","food",4,[],1],["grow","🌱","ينمو","v","actions",4,[93],1],["seal","🦭","فقمة","n","animals",4,[],1],["you","🫵","أنت","o","people",4,[],1],["zebra","🦓","حمار وحشي","n","animals",4,[],1],["bell","🔔","جرس","n","home",4,[196],1],["email","📧","بريد إلكتروني","n","school",4,[],1],["surprised","😲","متفاجئ","a","describe",4,[41],1],["camera","📷","كاميرا","n","school",4,[6,188],1],["honey","🍯","عسل","n","food",4,[],1],["parking","🅿️","موقف سيارات","n","world",4,[],1],["pear","🍐","كمثرى","n","food",4,[],1],["angry","😠","غاضب","a","describe",4,[0],1],["app","📲","تطبيق","n","school",4,[36],1],["button","🔘","زرّ","n","home",4,[],1],["location","📍","موقع","n","world",4,[],1],["railway","🛤️","سكة حديد","n","world",4,[],1],["cute","🥰","لطيف","a","describe",4,[47],1],["lion","🦁","أسد","n","animals",4,[],1],["quiet","🤫","ساكت","a","describe",4,[37],1],["receive","📥","يستلم","v","actions",4,[42],1],["ride","🚴","يركب الدراجة","v","actions",4,[],1],["toys","🧸🪀","ألعاب","n","home",4,[266],2],["dark","🌑","مظلم","a","describe",4,[30],1],["thread","🧵","خيط","n","home",4,[],1],["scale","⚖️","ميزان","n","school",4,[64],1],["throw","🤾","يرمي","v","actions",4,[],1],["worried","😟","قلق","a","describe",4,[40],1],["battery","🔋","بطارية","n","home",4,[192],1],["click","🖱️","ينقر","v","actions",4,[],1],["diamond","💎","ألماس","n","home",4,[165],1],["giraffe","🦒","زرافة","n","animals",4,[],1],["target","🎯","هدف","n","school",4,[],1],["village","🏘️","قرية","n","world",4,[20],1],["lock","🔒","قفل","n","home",4,[195],1],["blood","🩸","دم","n","people",4,[],1],["list","📋","قائمة","n","school",4,[179],1],["newspaper","📰","جريدة","n","school",4,[187],1],["numbers","🔢","أرقام","n","school",4,[197],1],["office","💼🖥️","مكتب","n","world",4,[177,205],2],["previous","⏮️","السابق","a","describe",4,[28],1],["scared","😨","خائف","a","describe",4,[41],1],["shower","🚿","دشّ","n","home",4,[226],1],["station","🚉","محطة قطار","n","world",4,[53],1],["cabinet","🗄️","خزانة ملفات","n","home",5,[],1],["online","🌐💻","متصل بالإنترنت","a","describe",5,[89,176],2],["ram","🐏","كبش","n","animals",5,[],1],["win","🏆🥇","يفوز","v","actions",5,[128,240],2],["finger","☝️","إصبع","n","people",5,[62],1],["flag","🚩","عَلَم","n","school",5,[],1],["planet","🪐","كوكب","n","nature",5,[],1],["remember","🧠💭","يتذكّر","v","actions",5,[172,256],2],["bone","🦴","عظمة","n","people",5,[],1],["mirror","🪞","مرآة","n","home",5,[],1],["rat","🐀","جرذ","n","animals",5,[],1],["birthday","🎂","عيد ميلاد","n","school",5,[113],1],["cloud","☁️","سحابة","n","nature",5,[60],1],["coat","🧥","معطف","n","home",5,[],1],["jersey","🎽","قميص رياضي","n","fun",5,[],1],["fix","🛠️","يصلح","v","actions",5,[],1],["kite","🪁","طائرة ورقية","n","home",5,[],1],["watermelon","🍉","بطيخ","n","food",5,[],1],["bath","🛁","حوض استحمام","n","home",5,[],1],["buffalo","🐃","جاموس","n","animals",5,[4],1],["calm","😌","مطمئن","a","describe",5,[47],1],["clock","🕰️","ساعة حائط","n","home",5,[11],1],["eagle","🦅","نسر","n","animals",5,[],1],["kiwi","🥝","كيوي","n","food",5,[],1],["loud","🔊","صاخب","a","describe",5,[26],1],["mountain","⛰️","جبل","n","world",5,[69],1],["princess","👸","أميرة","n","people",5,[],1],["blind","🧑‍🦯","كفيف","a","describe",5,[],1],["buy","🛒💵","يشتري","v","actions",5,[174,229],2],["deer","🦌","غزال","n","animals",5,[],1],["flower","🌸","زهرة","n","nature",5,[15,96],1],["hello","👋","مرحبًا","o","actions",5,[151],1],["pilot","🧑‍✈️","طيّار","n","people",5,[],1],["secret","🤐","سرّ","n","describe",5,[37],1],["singer","🧑‍🎤","مغنٍّ","n","people",5,[],1],["trash","🗑️","سلة مهملات","n","home",5,[208],1],["museum","🏛️","متحف","n","world",5,[131],1],["rocket","🚀","صاروخ","n","world",5,[],1],["employee","🧑‍💼","موظّف","n","people",5,[255],1],["language","🗣️🔤","لغة","n","school",5,[198,209],2],["price","🏷️","سعر","n","school",5,[136],1],["shark","🦈","قرش","n","animals",5,[],1],["corn","🌽","ذرة","n","food",5,[97],1],["drop","🫳","يُسقِط","v","actions",5,[],1],["monster","👹","وحش","n","people",5,[],1],["plan","📋✏️","يخطّط","v","actions",5,[76,179],2],["broken","💔","مكسور","a","describe",5,[19,166],1],["cherry","🍒","كرز","n","food",5,[],1],["chick","🐥","كتكوت","n","animals",5,[],1],["grass","🌿","عشب","n","nature",5,[22],1],["nature","🌳⛰️🌊","طبيعة","n","nature",5,[69,87,94],3],["shopping","🛍️","تسوّق","n","school",5,[],1],["chart","📊","رسم بياني","n","school",5,[],1],["confused","😕","محتار","a","describe",5,[40],1],["feed","👩‍🍼","يُطعِم","v","actions",5,[],1],["meet","🤝👋","يلتقي","v","actions",5,[151,234],2],["tongue","👅","لسان","n","people",5,[149],1],["basketball","🏀","كرة السلة","n","fun",5,[124],1],["golf","⛳","غولف","n","fun",5,[],1],["laugh","😂","يضحك","v","actions",5,[16],1],["soldier","🪖","جندي","n","people",5,[],1],["study","📖✏️","يدرس","v","actions",5,[76,182],2],["chain","⛓️","سلسلة","n","school",5,[],1],["cook","🍳","يطبخ","v","actions",5,[109],1],["curious","🧐","فضولي","a","describe",5,[],1],["hungry","🤤","جائع","a","describe",5,[21],1],["innocent","😇","بريء","a","describe",5,[47],1],["rabbit","🐰","أرنب","n","animals",5,[],1],["salad","🥗","سلطة","n","food",5,[242],1],["silent","😶","صامت","a","describe",5,[37],1],["slow","🦥","بطيء","a","describe",5,[],1],["soup","🍲","حساء","n","food",5,[],1],["traffic","🚗🚕🚙","زحام مروري","n","world",5,[218,219,220],3],["baseball","⚾","بيسبول","n","fun",5,[1,68],1],["cut","✂️📄","يقصّ","v","actions",5,[70,178],2],["pepper","🫑","فلفل","n","food",5,[],1],["smile","😊","يبتسم","v","actions",5,[18,47],1],["hear","👂🔔","يسمع","v","actions",5,[147,196],2],["hippo","🦛","فرس النهر","n","animals",5,[],1],["match","⚽🏟️","مباراة","n","fun",5,[67,132],2],["sandwich","🥪","شطيرة","n","food",5,[246],1],["stadium","🏟️","ملعب","n","world",5,[132],1],["trap","🪤","مصيدة","n","home",5,[],1],["worker","🧑‍🏭","عامل","n","people",5,[],1],["disappointed","😞","خائب الأمل","a","describe",5,[40,212],1],["ghost","👻","شبح","n","people",5,[],1],["nervous","😬","متوتّر","a","describe",5,[],1],["signal","📶","إشارة","n","school",5,[],1],["tissue","🧻","مناديل ورقية","n","home",5,[],1],["mask","😷","كمامة","n","people",5,[214],1],["ticket","🎫","تذكرة","n","school",5,[],1],["toilet","🚽","مرحاض","n","home",5,[225],1],["point","👉","يشير","v","actions",5,[39],1],["share","🍕🤝","يشارك","v","actions",5,[105,234],2],["wheel","🛞","عجلة","n","world",5,[],1],["DNA","🧬","الحمض النووي","n","nature",5,[261],1],["correct","✅","صحيح","a","describe",5,[13,71],1],["cry","😭","يبكي","v","actions",5,[40],1],["olive","🫒","زيتون","n","food",5,[],1],["taxi","🚕","سيارة أجرة","n","world",5,[7,218],1],["winter","❄️🧣","شتاء","n","nature",6,[78,257],2],["angle","📐","زاوية","n","school",6,[181],1],["break","🔨🧱","يكسر","v","actions",6,[200,263],2],["guitar","🎸","غيتار","n","fun",6,[121],1],["pen","🖊️","قلم حبر","n","school",6,[35],1],["whale","🐳","حوت","n","animals",6,[],1],["answer","🙋✅","يجيب","v","actions",6,[71,215],2],["cookie","🍪","بسكويت","n","food",6,[],1],["design","✏️📐","يصمّم","v","actions",6,[76,181],2],["environment","🌍🌱","بيئة","n","nature",6,[88,93],2],["fishing","🎣","صيد السمك","n","fun",6,[],1],["guess","🤔❓","يخمّن","v","actions",6,[80,232],2],["learn","🧠📚","يتعلّم","v","actions",6,[183,256],2],["lucky","🍀","محظوظ","a","describe",6,[],1],["x-ray","🩻","صورة أشعة","n","people",6,[],1],["autumn","🍂","خريف","n","nature",6,[22],1],["barrier","🚧","حاجز","n","world",6,[],1],["factory","🏭","مصنع","n","world",6,[135],1],["delicious","😋","لذيذ","a","describe",6,[21],1],["follow","🚶🚶","يتبع","v","actions",6,[224],2],["hide","🙈","يختبئ","v","actions",6,[],1],["butterfly","🦋","فراشة","n","animals",6,[],1],["drive","🚗💨","يقود","v","actions",6,[169,219],2],["electricity","⚡","كهرباء","n","nature",6,[66],1],["helicopter","🚁","مروحية","n","world",6,[],1],["hockey","🏑","هوكي","n","fun",6,[],1],["leaf","🍃","ورقة شجر","n","nature",6,[],1],["lightning","🌩️","برق","n","nature",6,[38],1],["peace","✌️","سلام","n","school",6,[],1],["accident","🚗💥","حادث","n","world",6,[168,219],2],["breakfast","🥐☕","فطور","n","food",6,[61],2],["hate","💔👎","يكره","v","actions",6,[153,166],2],["turtle","🐢","سلحفاة","n","animals",6,[],1],["calendar","📅","تقويم","n","school",6,[5],1],["can","🥫","علبة","n","food",6,[],1],["check","✔️","يتحقّق","v","actions",6,[13],1],["couple","👫","زوجان","n","people",6,[],1],["date","📆","تاريخ اليوم","n","home",6,[5],1],["hope","🤞","يأمل","v","actions",6,[],1],["lift","🏋️","يرفع","v","actions",6,[129],1],["rugby","🏉","رجبي","n","fun",6,[],1],["tower","🗼","برج","n","world",6,[],1],["alien","👽","كائن فضائي","n","people",6,[],1],["celebrate","🥳","يحتفل","v","actions",6,[34],1],["certificate","📜","شهادة","n","school",6,[184],1],["cricket","🏏","كريكيت","n","fun",6,[],1],["enjoy","😀👍","يستمتع","v","actions",6,[152,211],2],["repeat","🔁","يكرّر","v","actions",6,[191],1],["website","🌐📄","موقع إلكتروني","n","school",6,[89,178],2],["lose","🗝️❓","يفقد","v","actions",6,[80],2],["pin","📌","دبوس","n","school",6,[],1],["soap","🧼","صابون","n","home",6,[],1],["garden","🌷🌳","حديقة","n","home",6,[94,95],2],["motorcycle","🏍️","دراجة نارية","n","world",6,[],1],["owl","🦉","بومة","n","animals",6,[],1],["shocked","🤯","مصدوم","a","describe",6,[],1],["ambulance","🚑","سيارة إسعاف","n","world",6,[217],1],["ant","🐜","نملة","n","animals",6,[138],1],["curry","🍛","كاري","n","food",6,[],1],["forget","🧠❓","ينسى","v","actions",6,[80,256],2],["gear","⚙️","ترس","n","school",6,[],1],["listen","👂🎵","يستمع","v","actions",6,[119,147],2],["practice","🎹🔁","يتدرّب","v","actions",6,[122,191],2],["queen","👑👩","ملكة","n","people",6,[154,160],2],["castle","🏰","قلعة","n","world",6,[8],1],["chemistry","⚗️","كيمياء","n","nature",6,[],1],["palace","🏯","قصر","n","world",6,[8],1],["passport","🛂","جواز سفر","n","world",6,[],1],["plus","➕","زائد","n","school",6,[82],1],["subway","🚇","مترو","n","world",6,[53],1],["tennis","🎾","تنس","n","fun",6,[1,123],1],["theater","🎭","مسرح","n","fun",6,[118],1],["gloves","🧤","قفازات","n","home",6,[258],1],["grandfather","👴","جدّ","n","people",6,[],1],["injury","🩹🦵","إصابة","n","people",6,[247],2],["plug","🔌","قابس","n","home",6,[193],1],["savings","💰","مدّخرات","n","school",6,[173],1],["sports","⚽🏀🎾","رياضة","n","fun",6,[67,123,124],3],["swan","🦢","بجعة","n","animals",6,[],1],["tape","📼","شريط فيديو","n","school",6,[],1],["brush","🖌️","فرشاة","n","school",6,[204],1],["chef","🧑‍🍳","طاهٍ","n","people",6,[252],1],["satellite","🛰️","قمر صناعي","n","nature",6,[],1],["wedding","💍👰","زفاف","n","people",6,[161,164],2],["anchor","⚓","مرساة","n","world",6,[],1],["charge","🔌🔋","يشحن","v","actions",6,[192,193],2],["emergency","🚨🚑","طوارئ","n","people",6,[217,222],2],["fan","🪭","مروحة يدوية","n","home",6,[],1],["ferry","⛴️","عبّارة","n","world",6,[43],1],["garlic","🧄","ثوم","n","food",6,[],1],["helmet","⛑️","خوذة","n","home",6,[],1],["pasta","🍝","معكرونة","n","food",6,[],1],["vehicles","🚗🚌🚚","مركبات","n","world",6,[216,219,221],3],["bright","🔆","ساطع","a","describe",6,[50],1],["climate","🌍🌡️","مناخ","n","nature",6,[88,91],2],["detective","🕵️","محقّق","n","people",6,[],1],["piano","🎹","بيانو","n","fun",6,[122],1],["scientist","🧑‍🔬","عالِم","n","people",6,[],1],["telephone","☎️","هاتف أرضي","n","school",6,[36],1],["wing","🪽","جناح","n","animals",6,[],1],["bored","😒","ملول","a","describe",7,[],1],["desert","🏜️","صحراء","n","world",7,[],1],["forest","🌲🌳🌲","غابة","n","nature",7,[94],3],["healthy","🥗💪","صحّي","a","describe",7,[170,242],2],["hot dog","🌭","نقانق","n","food",7,[],1],["hurricane","🌀","إعصار حلزوني","n","nature",7,[52],1],["information","ℹ️","معلومات","n","school",7,[],1],["little","🤏","قليل","a","describe",7,[45],1],["ocean","🌊🐋","محيط","n","nature",7,[87],2],["peanut","🥜","فول سوداني","n","food",7,[],1],["police officer","👮","شرطي","n","people",7,[],1],["pray","🤲","يدعو","v","actions",7,[235],1],["travel","✈️🌍","يسافر","v","actions",7,[72,88],2],["medal","🏅","ميدالية","n","school",7,[127],1],["shrimp","🦐","روبيان","n","animals",7,[],1],["skull","💀","جمجمة","n","people",7,[],1],["arrive","🛬","يصل","v","actions",7,[],1],["needle","🪡","إبرة","n","home",7,[],1],["penguin","🐧","بطريق","n","animals",7,[],1],["sell","🏷️💵","يبيع","v","actions",7,[136,174],2],["spoon","🥄","ملعقة","n","food",7,[238],1],["tooth","🦷","سنّ","n","people",7,[248],1],["basket","🧺","سلة","n","home",7,[268],1],["beard","🧔","لحية","n","people",7,[],1],["bucket","🪣","سطل","n","home",7,[],1],["clean","🧹✨","ينظّف","v","actions",7,[77,267],2],["dinosaur","🦖","ديناصور","n","animals",7,[],1],["hook","🪝","خطّاف","n","school",7,[],1],["nest","🪺","عشّ","n","animals",7,[],1],["patient","🤒🛏️","مريض في المستشفى","n","people",7,[228,231],2],["radiation","☢️","إشعاع","n","nature",7,[],1],["rainbow","🌈","قوس قزح","n","nature",7,[],1],["sunny","🌞","مشمس","a","nature",7,[50],1],["sword","⚔️","سيف","n","school",7,[63],1],["worm","🪱","دودة","n","animals",7,[],1],["CD","💿","قرص مدمج","n","school",7,[],1],["crab","🦀","سلطعون","n","animals",7,[],1],["holiday","🏖️🧳","إجازة","n","nature",7,[130,265],2],["shy","😳","خجول","a","describe",7,[],1],["driver","🧑🚕","سائق","n","people",7,[218],2],["farmer","🧑‍🌾","مزارع","n","people",7,[],1],["kitchen","🍳🔪","مطبخ","n","home",7,[109,201],2],["lamp","🪔","قنديل","n","home",7,[24],1],["purse","👛","محفظة نقود","n","home",7,[],1],["tent","⛺","خيمة","n","home",7,[],1],["grandmother","👵","جدّة","n","people",7,[],1],["nails","💅","أظافر","n","people",7,[],1],["sunset","🌇","غروب الشمس","n","nature",7,[10,51],1],["wet","💦","مبلّل","a","describe",7,[],1],["homework","📝","واجب منزلي","n","school",7,[185],1],["ladder","🪜","سلّم","n","home",7,[],1],["race car","🏎️","سيارة سباق","n","world",7,[7],1],["donkey","🫏","حمار","n","animals",7,[],1],["protect","🛡️❤️","يحمي","v","actions",7,[81,230],2],["punch","👊","يلكم","v","actions",7,[],1],["finish","🏁✅","ينهي","v","actions",7,[71,125],2],["wheat","🌾","قمح","n","nature",7,[98],1],["wool","🧶","صوف","n","home",7,[],1],["next","⏭️","التالي","a","describe",7,[28],1],["nut","🌰","مكسّرات","n","food",7,[],1],["shield","🛡️","درع","n","school",7,[230],1],["sit","🪑⬇️","يجلس","v","actions",7,[85,269],2],["web","🕸️","شبكة عنكبوت","n","animals",7,[],1],["yoga","🧘","يوغا","n","fun",7,[],1],["carry","🏋️📦","يحمل","v","actions",7,[129,186],2],["expensive","💎💰","غالي الثمن","a","describe",7,[165,173],2],["feather","🪶","ريشة","n","animals",7,[],1],["injection","💉","حقنة","n","people",7,[163],1],["mall","🏬","مركز تجاري","n","world",7,[49],1],["relax","🧖","يسترخي","v","actions",7,[],1],["squirrel","🐿️","سنجاب","n","animals",7,[],1],["umbrella","☂️","مظلة","n","home",7,[],1],["writer","🧑✍️","كاتب","n","people",7,[75],2],["bride","👰","عروس","n","people",7,[161],1],["boxing","🥊","ملاكمة","n","fun",7,[],1],["catch","🧤⚾","يلتقط","v","actions",7,[68,258],2],["dolphin","🐬","دلفين","n","animals",7,[],1],["dove","🕊️","حمامة","n","animals",7,[],1],["graduation","🎓","تخرّج","n","school",7,[],1],["lawyer","🧑‍💼⚖️","محامٍ","n","people",7,[64,255],2],["lungs","🫁","رئتان","n","people",7,[271],1],["peach","🍑","خوخ","n","food",7,[],1],["snail","🐌","حلزون","n","animals",7,[],1],["announce","📢","يعلن","v","actions",7,[],1],["unhappy","🙁","غير سعيد","a","describe",7,[40],1],["wheelchair","🦽","كرسي متحرك","n","world",7,[],1],["actor","🧑🎭","ممثّل","n","people",7,[118],2],["elevator","🛗","مصعد","n","home",7,[],1],["lobster","🦞","كركند","n","animals",7,[],1],["panda","🐼","باندا","n","animals",7,[],1],["peas","🫛","بازلاء","n","food",7,[],1],["podcast","🎙️","بودكاست","n","fun",7,[29],1],["screw","🔩","برغي","n","school",7,[],1],["bathroom","🚿🚽","حمّام","n","home",7,[225,226],2],["camel","🐪","جمل","n","animals",7,[],1],["lemonade","🍋🥤","عصير ليمون","n","food",7,[100,244],2],["count","☝️🔢","يعدّ","v","actions",7,[62,197],2],["height","📏🧍","طول القامة","n","home",7,[180,250],2],["laptop","💻","حاسوب محمول","n","school",7,[12,176],1],["popcorn","🍿","فشار","n","food",7,[111],1],["reception","🛎️","استقبال","n","world",8,[],1],["score","⚽🥅","يسجّل هدفًا","v","actions",8,[67,239],2],["champion","🧑🏆","بطل","n","people",8,[128],2],["climb","🧗","يتسلّق","v","actions",8,[],1],["cruise","🛳️","رحلة بحرية","n","world",8,[43],1],["gorilla","🦍","غوريلا","n","animals",8,[],1],["strawberry","🍓","فراولة","n","food",8,[103],1],["beaver","🦫","قندس","n","animals",8,[],1],["customer","🧑🛒","زبون","n","people",8,[229],2],["draw","✏️🖼️","يرسم","v","actions",8,[76,207],2],["drum","🥁","طبل","n","fun",8,[237],1],["massage","💆","تدليك","n","people",8,[],1],["mosquito","🦟","بعوضة","n","animals",8,[],1],["swim","🏊","يسبح","v","actions",8,[],1],["waste","🗑️💵","يبذّر","v","actions",8,[174,208],2],["fog","🌫️","ضباب","n","nature",8,[],1],["noodles","🍜","نودلز","n","food",8,[],1],["turkey","🦃","ديك رومي","n","animals",8,[],1],["turn","↩️","يستدير","v","actions",8,[23],1],["coin","🪙","عملة معدنية","n","school",8,[],1],["fist","✊","قبضة","n","people",8,[74],1],["leopard","🐆","فهد","n","animals",8,[],1],["taco","🌮","تاكو","n","food",8,[],1],["candle","🕯️","شمعة","n","home",8,[],1],["exercise","🏃🏋️","تمارين","n","fun",8,[126,129],2],["furious","😡","غاضب جدًا","a","describe",8,[0],1],["sushi","🍣","سوشي","n","food",8,[],1],["tractor","🚜","جرّار","n","world",8,[],1],["copy","📄📄","ينسخ","v","actions",8,[178],2],["decrease","📉","ينقص","v","actions",8,[9],1],["rhino","🦏","وحيد القرن","n","animals",8,[],1],["shine","🌟","يلمع","v","actions",8,[48],1],["trophy","🏆","كأس","n","school",8,[128],1],["bedroom","🛏️🧸","غرفة نوم","n","home",8,[228,266],2],["coral","🪸","مرجان","n","animals",8,[],1],["hammer","🔨","مطرقة","n","school",8,[200],1],["menu","📋🍽️","قائمة الطعام","n","food",8,[110,179],2],["pirate","🏴‍☠️","قرصان","n","people",8,[],1],["annoyed","🙄","منزعج","a","describe",8,[],1],["bowling","🎳","بولينغ","n","fun",8,[],1],["bus stop","🚏","موقف حافلات","n","world",8,[],1],["farm","🐄🌾","مزرعة","n","world",8,[98],2],["fly","🐦☁️","يطير","v","actions",8,[60,141],2],["pencil","✏️","قلم رصاص","n","school",8,[76],1],["hut","🛖","كوخ","n","home",8,[],1],["scream","😱","يصرخ","v","actions",8,[41],1],["sweat","😓","يتعرّق","v","actions",8,[40],1],["unicorn","🦄","حصان وحيد القرن","n","animals",8,[],1],["beetle","🪲","خنفساء","n","animals",8,[],1],["clown","🤡","مهرّج","n","people",8,[],1],["jar","🫙","برطمان","n","food",8,[272],1],["mushroom","🍄","فطر","n","food",8,[],1],["pumpkin","🎃","يقطين","n","nature",8,[],1],["recipe","📖🍳","وصفة طبخ","n","food",8,[109,182],2],["ski","⛷️","يتزلّج","v","actions",8,[],1],["taste","👅🍦","يتذوّق","v","actions",8,[107,149],2],["traffic light","🚦","إشارة مرور","n","world",8,[],1],["vest","🦺","سترة أمان","n","home",8,[],1],["dive","🤿","يغوص","v","actions",8,[],1],["jeep","🚙","سيارة جيب","n","world",8,[7,220],1],["kick","🦵⚽","يركل","v","actions",8,[67,247],2],["sunglasses","🕶️","نظارة شمسية","n","home",8,[17],1],["sunrise","🌄","شروق الشمس","n","nature",8,[51],1],["tornado","🌪️","إعصار","n","nature",8,[52],1],["gas station","⛽","محطة وقود","n","world",8,[],1],["keyboard","⌨️","لوحة مفاتيح","n","school",8,[],1],["mix","🥣🥄","يخلط","v","actions",8,[238,243],2],["post office","🏤","مكتب بريد","n","world",8,[],1],["pudding","🍮","بودنغ","n","food",8,[],1],["sofa","🛋️","أريكة","n","home",8,[227],1],["engineer","👷📐","مهندس","n","people",8,[162,181],2],["kangaroo","🦘","كنغر","n","animals",8,[],1],["name","📛","اسم","n","school",8,[],1],["danger","⚠️","خطر","n","school",8,[],1],["dollar","💲","دولار","n","school",8,[],1],["empty","🪫","فارغ","a","describe",8,[],1],["hug","🤗","يعانق","v","actions",8,[],1],["jump","🤸⬆️","يقفز","v","actions",8,[84,236],2],["lipstick","💄","أحمر شفاه","n","home",8,[],1],["pancakes","🥞","بان كيك","n","food",8,[],1],["parrot","🦜","ببغاء","n","animals",8,[],1],["statue","🗽","تمثال","n","world",8,[],1],["surrender","🏳️","يستسلم","v","actions",8,[],1],["daisy","🌼","أقحوان","n","nature",8,[15],1],["download","☁️⬇️","ينزّل ملفًا","v","actions",8,[60,85],2],["paw","🐾","كفّ حيوان","n","animals",8,[],1],["pets","🐶🐱🐹","حيوانات أليفة","n","animals",8,[143,144,145],3],["restaurant","🍽️🧑‍🍳","مطعم","n","world",8,[110,252],2],["scarf","🧣","وشاح","n","home",8,[257],1],["shiny","✨","لامع","a","describe",8,[77],1],["ninja","🥷","نينجا","n","people",8,[],1],["teach","🧑‍🏫✏️","يعلّم","v","actions",8,[76,253],2],["cheer","🙌","يهتف","v","actions",8,[],1],["lettuce","🥬","خس","n","food",8,[],1],["octopus","🐙","أخطبوط","n","animals",8,[],1],["password","🔐","كلمة المرور","n","school",8,[25],1],["builder","👷","عامل بناء","n","people",8,[162],1],["concert","🎤🎸","حفلة موسيقية","n","fun",8,[116,121],2],["cowboy","🤠","راعي بقر","n","people",8,[],1],["math","🧮➕","رياضيات","n","school",8,[82],2],["measure","📏👀","يقيس","v","actions",9,[146,180],2],["superhero","🦸","بطل خارق","n","people",9,[],1],["vegetables","🥦🥕🌽","خضروات","n","food",9,[97,241,245],3],["escape","🏃🚪","يهرب","v","actions",9,[126,223],2],["flood","🌊🏠","فيضان","n","nature",9,[87,133],2],["oyster","🦪","محار","n","food",9,[],1],["peacock","🦚","طاووس","n","animals",9,[],1],["rainy","☔","ممطر","a","nature",9,[38],1],["ruler","📏","مسطرة","n","school",9,[180],1],["squid","🦑","حبّار","n","animals",9,[],1],["naughty","😈","شقي","a","describe",9,[],1],["bounce","⛹️","ينطّط الكرة","v","actions",9,[],1],["insects","🐜🐝🐞","حشرات","n","animals",9,[138,139,140],3],["push","🫸","يدفع بيده","v","actions",9,[],1],["razor","🪒","شفرة حلاقة","n","home",9,[],1],["barber","💈","حلّاق","n","people",9,[],1],["fail","❌😞","يفشل","v","actions",9,[79,212],2],["midnight","🕛🌙","منتصف الليل","n","nature",9,[90,203],2],["broccoli","🥦","بروكلي","n","food",9,[245],1],["camping","🏕️","تخييم","n","world",9,[],1],["haircut","💇","قصّة شعر","n","people",9,[],1],["lie","🤥","يكذب","v","actions",9,[],1],["mammoth","🦣","ماموث","n","animals",9,[],1],["nurse","🧑‍⚕️💉","ممرّض","n","people",9,[163,251],2],["pause","⏸️","يوقف مؤقتًا","v","actions",9,[28],1],["slide","🛝","زحليقة","n","world",9,[],1],["spring","🌷🐣","ربيع","n","nature",9,[95],2],["beads","📿","مسبحة","n","home",9,[],1],["blow","🌬️🎈","ينفخ","v","actions",9,[92,114],2],["friendship","🤝❤️","صداقة","n","people",9,[81,234],2],["furniture","🛋️🪑🛏️","أثاث","n","home",9,[227,228,269],3],["mechanic","🧑‍🔧","ميكانيكي","n","people",9,[],1],["physics","⚛️🧲","فيزياء","n","school",9,[65,264],2],["tools","🔨🔧🪛","أدوات","n","school",9,[200],3],["backpack","🎒","حقيبة ظهر","n","school",9,[],1],["cart","🛒","عربة تسوق","n","school",9,[229],1],["caterpillar","🐛","يرقة","n","animals",9,[],1],["circus","🎪","سيرك","n","world",9,[],1],["passenger","🧑💺","راكب","n","people",9,[175],2],["timer","⏲️","مؤقّت","n","home",9,[11],1],["otter","🦦","قضاعة","n","animals",9,[],1],["scooter","🛴","سكوتر","n","world",9,[],1],["scorpion","🦂","عقرب","n","animals",9,[],1],["puzzle","🧩","أحجية","n","school",9,[259],1],["avocado","🥑","أفوكادو","n","food",9,[],1],["deliver","📦🚚","يوصّل","v","actions",9,[186,221],2],["garage","🚗🏠","مرآب","n","home",9,[133,219],2],["jellyfish","🪼","قنديل البحر","n","animals",9,[],1],["locker","🛅","خزانة أمتعة","n","world",9,[],1],["sigh","😮‍💨","يتنهّد","v","actions",9,[],1],["suitcase","🧳","حقيبة سفر","n","home",9,[265],1],["volleyball","🏐","كرة الطائرة","n","fun",9,[1],1],["chess","♟️","شطرنج","n","school",9,[],1],["folder","📁","مجلّد","n","school",9,[],1],["notebook","📓","دفتر","n","school",9,[3],1],["print","🖨️📄","يطبع","v","actions",9,[178,206],2],["sing","🎤🎶","يغنّي","v","actions",9,[116,120],2],["burn","🔥🪵","يحترق","v","actions",9,[199,270],2],["printer","🖨️","طابعة","n","school",9,[206],1],["sneakers","👟","حذاء رياضي","n","home",9,[],1],["fever","🤒🌡️","حمّى","n","people",9,[91,231],2],["jewelry","💍💎","مجوهرات","n","home",9,[164,165],2],["paint","🖌️🎨","يلوّن","v","actions",9,[117,204],2],["receipt","🧾","إيصال","n","school",9,[],1],["cucumber","🥒","خيار","n","food",9,[],1],["fountain","⛲","نافورة","n","world",9,[],1],["hamster","🐹","هامستر","n","animals",9,[145],1],["lantern","🏮","فانوس","n","home",9,[24],1],["parachute","🪂","مظلة هبوط","n","world",9,[],1],["rooster","🐓","ديك","n","animals",9,[],1],["alarm clock","⏰","منبّه","n","home",9,[11,57],1],["alphabet","🔤","حروف أبجدية","n","school",9,[198],1],["canoe","🛶","زورق","n","world",9,[2],1],["firefighter","🧑‍🚒","إطفائي","n","people",9,[],1],["go home","🚶🏠","يعود إلى البيت","v","actions",9,[133,224],2],["ladybug","🐞","دعسوقة","n","animals",9,[140],1],["palm tree","🌴","نخلة","n","nature",9,[],1],["pollution","🏭💨","تلوّث","n","nature",9,[135,169],2],["snowman","⛄","رجل ثلج","n","nature",9,[],1],["tap","🚰","صنبور","n","home",9,[],1],["cable car","🚡","تلفريك","n","world",9,[],1],["mosque","🕌","مسجد","n","world",9,[],1],["smell","👃🌸","يشمّ","v","actions",9,[96,148],2],["sponge","🧽","إسفنجة","n","home",9,[],1],["earn","💼💵","يكسب المال","v","actions",9,[174,177],2],["experiment","🧪🔬","تجربة","n","nature",9,[260],2],["headphones","🎧","سمّاعات رأس","n","school",9,[],1],["knight","🛡️⚔️","فارس","n","people",9,[63,230],2],["photographer","🧑📷","مصوّر","n","people",9,[188],2],["shampoo","🧴","شامبو","n","home",9,[],1],["sleepy","😪","نعسان","a","describe",9,[46],1],["antenna","📡","هوائي","n","nature",9,[],1],["raccoon","🦝","راكون","n","animals",9,[],1],["exam","📝⏱️","امتحان","n","school",9,[185],2],["siren","🚨","صفّارة إنذار","n","world",9,[222],1],["surf","🏄","يركب الأمواج","v","actions",9,[],1],["tram","🚊","ترام","n","world",9,[53],1],["ATM","🏧","صرّاف آلي","n","school",9,[],1],["cloudy","⛅","غائم","a","nature",9,[50],1],["cupcake","🧁","كب كيك","n","food",9,[],1],["hedgehog","🦔","قنفذ","n","animals",10,[],1],["telescope","🔭","تلسكوب","n","nature",10,[202],1],["chase","🐱🐭","يطارد","v","actions",10,[142,143],2],["fast food","🍔🍟🥤","وجبات سريعة","n","food",10,[104,106,244],3],["skate","⛸️","حذاء تزلّج على الجليد","n","fun",10,[],1],["vase","🏺","مزهرية","n","home",10,[],1],["violin","🎻","كمان","n","fun",10,[],1],["baker","🧑‍🍳🥖","خبّاز","n","people",10,[252],2],["crossing","🚸","معبر مشاة","n","school",10,[],1],["fireworks","🎆","ألعاب نارية","n","school",10,[],1],["groom","🤵","عريس","n","people",10,[],1],["gym","🏋️🏢","نادٍ رياضي","n","world",10,[129,134],2],["magnet","🧲","مغناطيس","n","nature",10,[264],1],["atom","⚛️","ذرّة","n","nature",10,[65],1],["biology","🧬🌱","أحياء","n","school",10,[93,261],2],["dim","🔅","خافت","a","describe",10,[50],1],["instruments","🎸🎹🥁","آلات موسيقية","n","fun",10,[121,122,237],3],["melon","🍈","شمّام","n","food",10,[],1],["yacht","🛥️","يخت","n","world",10,[2],1],["donut","🍩","دونات","n","food",10,[],1],["noon","🕛☀️","الظهر","n","nature",10,[59,203],2],["ribbon","🎀","شريطة","n","school",10,[],1],["astronaut","🧑‍🚀","رائد فضاء","n","people",10,[],1],["blueberry","🫐","توت أزرق","n","food",10,[],1],["crayon","🖍️","قلم تلوين","n","school",10,[35],1],["explode","💥","ينفجر","v","actions",10,[168],1],["full moon","🌕","بدر","n","nature",10,[30],1],["police car","🚓","سيارة شرطة","n","world",10,[7],1],["pour","🫗","يصبّ","v","actions",10,[],1],["snack","🍿🥨","وجبة خفيفة","n","food",10,[111],2],["social media","👍💬❤️","وسائل التواصل","n","school",10,[81,152,171],3],["tourist","🧑📸🗺️","سائح","n","people",10,[189,210],3],["waffle","🧇","وافل","n","food",10,[],1],["wake up","⏰☀️","يستيقظ","v","actions",10,[57,59],2],["axe","🪓","فأس","n","school",10,[],1],["bubbles","🫧","فقاعات","n","home",10,[],1],["discover","🔭✨","يكتشف","v","actions",10,[77,202],2],["blouse","👚","بلوزة","n","home",10,[],1],["connect","🧩🧩","يربط","v","actions",10,[259],2],["scissors","✂️","مقصّ","n","school",10,[70],1],["disgusted","🤢","مشمئزّ","a","describe",10,[44],1],["jam","🍓🫙","مربّى","n","food",10,[103,272],2],["burrito","🌯","بوريتو","n","food",10,[],1],["cane","🦯","عصا","n","school",10,[],1],["cockroach","🪳","صرصور","n","animals",10,[],1],["dice","🎲","نرد","n","school",10,[],1],["laundry","🧺👕","غسيل","n","home",10,[155,268],2],["programmer","🧑‍💻","مبرمج","n","people",10,[254],1],["snowy","🌨️","مثلج","a","nature",10,[38],1],["volcano","🌋","بركان","n","world",10,[],1],["classroom","🧑‍🏫📚","فصل دراسي","n","school",10,[183,253],2],["goggles","🥽","نظارات واقية","n","home",10,[17],1],["knock","🚪✊","يطرق","v","actions",10,[74,223],2],["selfie","🤳","سيلفي","n","school",10,[],1],["comet","☄️","مذنّب","n","nature",10,[],1],["compass","🧭","بوصلة","n","school",10,[262],1],["dessert","🍰🍨","حلويات","n","food",10,[108],2],["broom","🧹","مكنسة","n","home",10,[267],1],["fridge","🧊🚪","ثلاجة","n","home",10,[223,249],2],["knot","🪢","عقدة","n","school",10,[],1],["microphone","🎤","ميكروفون","n","school",10,[29,116],1],["athlete","🏃🏅","رياضي","n","people",10,[126,127],2],["bite","🦷🍎","يعضّ","v","actions",10,[102,248],2],["bouquet","💐","باقة زهور","n","nature",10,[15],1],["explore","🧭🗺️","يستكشف","v","actions",10,[210,262],2],["cactus","🌵","صبّار","n","nature",10,[],1],["fire truck","🚒","سيارة إطفاء","n","world",10,[],1],["gymnastics","🤸","جمباز","n","fun",10,[236],1],["invite","✉️🎉","يدعو إلى حفلة","v","actions",10,[73,115],2],["living room","🛋️📺","غرفة جلوس","n","home",10,[190,227],2],["picnic","🧺🥪","نزهة","n","food",10,[246,268],2],["skunk","🦨","ظربان","n","animals",10,[],1],["turn on","💡👆","يشغّل","v","actions",10,[150,167],2],["vaccine","💉🛡️","لقاح","n","people",10,[163,230],2],["diary","📔🔒","مذكّرات","n","school",10,[195],2],["skates","🛼","حذاء تزلّج","n","world",10,[],1],["bagel","🥯","خبز بيغل","n","food",10,[],1],["swimsuit","🩱","ملابس سباحة","n","home",10,[],1],["toothbrush","🪥","فرشاة أسنان","n","home",10,[],1],["trumpet","🎺","بوق","n","fun",10,[],1],["volunteer","🙋❤️","يتطوّع","v","actions",10,[81,215],2],["hashtag","#️⃣","وسم","n","school",10,[],1],["headache","🤕🧠","صداع","n","people",10,[233,256],2],["mermaid","🧜","حورية البحر","n","people",10,[],1],["breathe","🫁🌬️","يتنفّس","v","actions",10,[92,271],2],["fencing","🤺","مبارزة","n","fun",10,[],1],["flamingo","🦩","فلامنغو","n","animals",10,[],1],["melt","🫠","يذوب","v","actions",10,[],1],["sunflower","🌻","دوّار الشمس","n","nature",10,[15],1],["cough","😷💨","سعال","n","people",10,[169,214],2],["flip-flops","🩴","شبشب","n","home",10,[],1],["karate","🥋","كاراتيه","n","fun",10,[],1],["lollipop","🍭","مصّاصة","n","food",10,[],1],["goose","🪿","إوزّة","n","animals",10,[],1],["koala","🐨","كوالا","n","animals",10,[],1],["dizzy","😵‍💫","دائخ","a","describe",10,[],1],["ginger","🫚","زنجبيل","n","food",10,[],1],["grasshopper","🦗","جندب","n","animals",10,[],1],["sled","🛷","مزلجة","n","world",10,[],1],["delete","🗑️❌","يحذف","v","actions",10,[79,208],2]],"levels":[[{"g":"colors","n":0,"w":[7,6,0,1,2,3,4,5],"p":[[7,6,0,1],[2,3,4,5]]},{"g":"numbers","n":0,"w":[9,10,11,12,13,14,15,18,16,17,19,8],"p":[[9,10,11,12],[13,14,15,18],[16,17,19,8]]},{"g":"animals","n":0,"w":[25,28,29,30,33,37,38,70,72,77,79,80],"p":[[25,28,29,30],[33,37,38,70],[72,77,79,80]]},{"g":"food","n":1,"w":[20,21,36,44,45,47,50,52],"p":[[20,21,36,44],[45,47,50,52]]},{"g":"food","n":2,"w":[53,58,59,60,61,74,82,98],"p":[[53,58,59,60],[61,74,82,98]]},{"g":"people","n":0,"w":[22,24,32,42,48,63,81,92,99,27,49,62],"p":[[22,24,32,42],[48,63,81,92],[99,27,49,62]]},{"g":"home","n":0,"w":[40,43,54,65,67,73,78,87,91,26,39,94],"p":[[40,43,54,65],[67,73,78,87],[91,26,39,94]]},{"g":"school","n":0,"w":[57,90,23,88],"p":[[57,90,23,88]]},{"g":"world","n":0,"w":[97,31,64,89],"p":[[97,31,64,89]]},{"g":"actions","n":0,"w":[41,66,68,69],"p":[[41,66,68,69]]},{"g":"describe","n":0,"w":[34,55,75,84],"p":[[34,55,75,84]]},{"g":"mix","n":0,"w":[83,86,76,93,51,35,56,95,46,96,71,85],"p":[[83,86,76,93],[51,35,56,95],[46,96,71,85]]}],[{"g":"colors","n":0,"w":[108,101,104,103,102,100,109,107,105,111,106,110],"p":[[108,101,104,103],[102,100,109,107],[105,111,106,110]]},{"g":"numbers","n":0,"w":[123,121,122,113,116,112,117,114,115,118,119,120],"p":[[123,121,122,113],[116,112,117,114],[115,118,119,120]]},{"g":"animals","n":0,"w":[126,129,131,137],"p":[[126,129,131,137]]},{"g":"food","n":0,"w":[127,128,140,142,143,150,162,171],"p":[[127,128,140,142],[143,150,162,171]]},{"g":"people","n":0,"w":[184,130,134,141,151,152,168,181],"p":[[184,130,134,141],[151,152,168,181]]},{"g":"home","n":0,"w":[136,157,170,187,147,155,158,166],"p":[[136,157,170,187],[147,155,158,166]]},{"g":"school","n":0,"w":[133,189,156,191],"p":[[133,189,156,191]]},{"g":"nature","n":0,"w":[125,146,172,174],"p":[[125,146,172,174]]},{"g":"actions","n":0,"w":[124,135,138,139,145,148,154,161,163,176,178,179],"p":[[124,135,138,139],[145,148,154,161],[163,176,178,179]]},{"g":"describe","n":0,"w":[149,159,183,132,190,160,173,177],"p":[[149,159,183,132],[190,160,173,177]]},{"g":"mix","n":1,"w":[165,169,195,196,153,167,180,182,198,144,194,186],"p":[[165,169,195,196],[153,167,180,182],[198,144,194,186]]},{"g":"mix","n":2,"w":[185,199,188,164,175,193,192,197],"p":[[185,199,188,164],[175,193,192,197]]}],[{"g":"numbers","n":0,"w":[209,210,207,211,208,200,202,201,203,204,205,206],"p":[[209,210,207,211],[208,200,202,201],[203,204,205,206]]},{"g":"food","n":0,"w":[215,217,221,227,255,257,271,281],"p":[[215,217,221,227],[255,257,271,281]]},{"g":"people","n":0,"w":[218,250,297,225,246,268,278,212],"p":[[218,250,297,225],[246,268,278,212]]},{"g":"home","n":0,"w":[228,213,261,267],"p":[[228,213,261,267]]},{"g":"school","n":0,"w":[247,287,290,293,229,242,248,286,230,269,277,292],"p":[[247,287,290,293],[229,242,248,286],[230,269,277,292]]},{"g":"world","n":0,"w":[238,243,284,216,219,235,236,259],"p":[[238,243,284,216],[219,235,236,259]]},{"g":"nature","n":0,"w":[231,237,239,249,254,260,280,224],"p":[[231,237,239,249],[254,260,280,224]]},{"g":"actions","n":0,"w":[220,234,240,245,252,253,256,263,265,266,275,279],"p":[[220,234,240,245],[252,253,256,263],[265,266,275,279]]},{"g":"describe","n":0,"w":[232,222,223,244,251,264,294,296],"p":[[232,222,223,244],[251,264,294,296]]},{"g":"mix","n":1,"w":[214,258,270,282,288,283,285,272,273,274,262,295],"p":[[214,258,270,282],[288,283,285,272],[273,274,262,295]]},{"g":"mix","n":2,"w":[226,233,241,289,291,299,276,298],"p":[[226,233,241,289],[291,299,276,298]]}],[{"g":"animals","n":0,"w":[305,314,317,333,334,355,358,360],"p":[[305,314,317,333],[334,355,358,360]]},{"g":"food","n":0,"w":[301,318,326,342,350,356,365,367],"p":[[301,318,326,342],[350,356,365,367]]},{"g":"people","n":0,"w":[391,309,341,302],"p":[[391,309,341,302]]},{"g":"home","n":0,"w":[323,351,380,386,300,313,322,361,370,378,384,390],"p":[[323,351,380,386],[300,313,322,361],[370,378,384,390]]},{"g":"school","n":1,"w":[315,325,327,362,392,393,394,307],"p":[[315,325,327,362],[392,393,394,307]]},{"g":"school","n":2,"w":[310,316,320,321,364,369,381,388],"p":[[310,316,320,321],[364,369,381,388]]},{"g":"world","n":0,"w":[304,306,332,345,371,389,395,337],"p":[[304,306,332,345],[371,389,395,337]]},{"g":"nature","n":0,"w":[303,308,311,324,329,331,339,343],"p":[[303,308,311,324],[329,331,339,343]]},{"g":"actions","n":0,"w":[319,328,330,338,344,348,349,353,357,376,377,382],"p":[[319,328,330,338],[344,348,349,353],[357,376,377,382]]},{"g":"describe","n":0,"w":[312,340,346,379,396,335,336,352,354,368,373,375],"p":[[312,340,346,379],[396,335,336,352],[354,368,373,375]]},{"g":"mix","n":0,"w":[359,398,387,372,399,363,374,366,383,385,347,397],"p":[[359,398,387,372],[399,363,374,366],[383,385,347,397]]}],[{"g":"animals","n":0,"w":[402,410,419,422,429,441,448,467],"p":[[402,410,419,422],[429,441,448,467]]},{"g":"food","n":0,"w":[417,423,442,447,468,471,475,480],"p":[[417,423,442,447],[468,471,475,480]]},{"g":"people","n":0,"w":[404,408,456,489,432,434,438,460,483,426,444,485],"p":[[404,408,456,489],[432,434,438,460],[483,426,444,485]]},{"g":"home","n":0,"w":[413,400,409,416,418,421,435,482],"p":[[413,400,409,416],[418,421,435,482]]},{"g":"school","n":0,"w":[405,439,440,452,487,411,451,462],"p":[[405,439,440,452],[487,411,451,462]]},{"g":"world","n":0,"w":[425,436,481,437],"p":[[425,436,481,437]]},{"g":"nature","n":0,"w":[412,430,449,450],"p":[[412,430,449,450]]},{"g":"fun","n":0,"w":[414,457,458,473],"p":[[414,457,458,473]]},{"g":"actions","n":1,"w":[403,407,415,428,431,443,445,454],"p":[[403,407,415,428],[431,443,445,454]]},{"g":"actions","n":2,"w":[455,459,461,463,474,476,477,492],"p":[[455,459,461,463],[474,476,477,492]]},{"g":"describe","n":0,"w":[433,446,470,496,401,420,424,427,453,464,465,466],"p":[[433,446,470,496],[401,420,424,427],[453,464,465,466]]},{"g":"mix","n":1,"w":[406,493,472,497,484,479,486,478],"p":[[406,493,472,497],[484,479,486,478]]},{"g":"mix","n":2,"w":[499,494,498,495,469,490,491,488],"p":[[499,494,498,495],[469,490,491,488]]}],[{"g":"animals","n":0,"w":[505,521,532,554],"p":[[505,521,532,554]]},{"g":"food","n":0,"w":[507,530,534,558],"p":[[507,530,534,558]]},{"g":"people","n":0,"w":[514,574,586,581,595,597,536,542],"p":[[514,574,586,581],[595,597,536,542]]},{"g":"home","n":0,"w":[572,590,537,551],"p":[[572,590,537,551]]},{"g":"school","n":0,"w":[501,504,533,544,550,580,528,568,548,598,560,576],"p":[[501,504,533,544],[550,580,528,568],[548,598,560,576]]},{"g":"world","n":0,"w":[517,541,564,516,566,524,529,553,556,567,569,584],"p":[[517,541,564,516],[566,524,529,553],[556,567,569,584]]},{"g":"nature","n":0,"w":[500,509,515,526,527,594,523,565],"p":[[500,509,515,526],[527,594,523,565]]},{"g":"fun","n":0,"w":[503,510,525,540,545,570,571,596],"p":[[503,510,525,540],[545,570,571,596]]},{"g":"actions","n":1,"w":[502,506,508,511,512,519,520,522,531,535,538,539],"p":[[502,506,508,511],[512,519,520,522],[531,535,538,539]]},{"g":"actions","n":2,"w":[543,546,547,549,559,561,562,585],"p":[[543,546,547,549],[559,561,562,585]]},{"g":"describe","n":0,"w":[513,593,518,555],"p":[[513,593,518,555]]},{"g":"mix","n":1,"w":[557,578,599,589,591,563,573,583],"p":[[557,578,599,589],[591,563,573,583]]},{"g":"mix","n":2,"w":[552,575,587,579,588,592,582,577],"p":[[552,575,587,579],[588,592,582,577]]}],[{"g":"animals","n":1,"w":[614,618,626,628,634,636,652,662],"p":[[614,618,626,628],[634,636,652,662]]},{"g":"animals","n":2,"w":[666,670,676,677,682,688,689,694],"p":[[666,670,676,677],[682,688,689,694]]},{"g":"food","n":0,"w":[604,609,620,659,681,690,695,699],"p":[[604,609,620,659],[681,690,695,699]]},{"g":"people","n":0,"w":[615,621,623,646,667,680,610,629,639,640,672,679],"p":[[615,621,623,646],[667,680,610,629],[639,640,672,679]]},{"g":"home","n":0,"w":[617,643,657,671,622,624,641,642,644,650,687,693],"p":[[617,643,657,671],[622,624,641,642],[644,650,687,693]]},{"g":"school","n":0,"w":[649,678,606,635,698,613,627,633],"p":[[649,678,606,635],[698,613,627,633]]},{"g":"world","n":0,"w":[601,668,651,685],"p":[[601,668,651,685]]},{"g":"nature","n":0,"w":[602,605,608,631,632,637,647,656],"p":[[602,605,608,631],[632,637,647,656]]},{"g":"actions","n":0,"w":[611,612,616,619,625,653,654,655,661,664,669,675],"p":[[611,612,616,619],[625,653,654,655],[661,664,669,675]]},{"g":"describe","n":0,"w":[607,648,658,600,603,638,665,684],"p":[[607,648,658,600],[603,638,665,684]]},{"g":"mix","n":0,"w":[686,645,673,697,660,692,630,663,674,691,683,696],"p":[[686,645,673,697],[660,692,630,663],[674,691,683,696]]}],[{"g":"animals","n":0,"w":[705,707,712,717,721,730,734,747,748,771,780,785],"p":[[705,707,712,717],[721,730,734,747],[748,771,780,785]]},{"g":"food","n":0,"w":[706,716,722,726,736,750,751,753],"p":[[706,716,722,726],[736,750,751,753]]},{"g":"people","n":0,"w":[720,702,708,770,796,711,737,749],"p":[[720,702,708,770],[796,711,737,749]]},{"g":"home","n":0,"w":[757,761,778,788,723,733,744,769],"p":[[757,761,778,788],[723,733,744,769]]},{"g":"school","n":0,"w":[743,799,772,773,774,765,795,719],"p":[[743,799,772,773],[774,765,795,719]]},{"g":"world","n":0,"w":[700,704,741,767,781,787,727,740],"p":[[700,704,741,767],[781,787,727,740]]},{"g":"nature","n":0,"w":[715,752,762,763],"p":[[715,752,762,763]]},{"g":"fun","n":0,"w":[710,724,739,797],"p":[[710,724,739,797]]},{"g":"actions","n":1,"w":[701,703,709,713,714,718,728,729,731,742,745,746],"p":[[701,703,709,713],[714,718,728,729],[731,742,745,746]]},{"g":"actions","n":2,"w":[754,755,758,760,766,776,777,782],"p":[[754,755,758,760],[766,776,777,782]]},{"g":"describe","n":0,"w":[775,725,738,789],"p":[[775,725,738,789]]},{"g":"mix","n":1,"w":[786,794,768,779,793,790,798,732],"p":[[786,794,768,779],[793,790,798,732]]},{"g":"mix","n":2,"w":[735,756,759,764,783,784,791,792],"p":[[735,756,759,764],[783,784,791,792]]}],[{"g":"animals","n":0,"w":[806,809,812,822,836,840,842,847,866,869,875,892],"p":[[806,809,812,822],[836,840,842,847],[866,869,875,892]]},{"g":"food","n":0,"w":[802,805,844,864],"p":[[802,805,844,864]]},{"g":"people","n":0,"w":[820,860,815,823,831,838,873,888],"p":[[820,860,815,823],[831,838,873,888]]},{"g":"home","n":0,"w":[850,859,861,814,827,830,839,846,867,870,879,883],"p":[[850,859,861,814],[827,830,839,846],[867,870,879,883]]},{"g":"school","n":0,"w":[808,832,834,853,854,871,893,858,886,897,833,835],"p":[[808,832,834,853],[854,871,893,858],[886,897,833,835]]},{"g":"world","n":0,"w":[819,825,837,848,865,881,841,868,872,880,894,896],"p":[[819,825,837,848],[865,881,841,868],[872,880,894,896]]},{"g":"nature","n":0,"w":[804,807,817,826,876,877,878,898],"p":[[804,807,817,826],[876,877,878,898]]},{"g":"actions","n":1,"w":[800,803,811,813,816,821,824,828],"p":[[800,803,811,813],[816,821,824,828]]},{"g":"actions","n":2,"w":[845,849,855,856,857,862,874,882],"p":[[845,849,855,856],[857,862,874,882]]},{"g":"mix","n":1,"w":[818,899,801,829,887,889,843,852],"p":[[818,899,801,829],[887,889,843,852]]},{"g":"mix","n":2,"w":[863,885,891,851,884,895,810,890],"p":[[863,885,891,851],[884,895,810,890]]}],[{"g":"animals","n":0,"w":[900,944,971,986],"p":[[900,944,971,986]]},{"g":"food","n":0,"w":[903,917,919,923,929,932,941,942,956,970,976,992],"p":[[903,917,919,923],[929,932,941,942],[956,970,976,992]]},{"g":"people","n":0,"w":[973,982,989,907,922,931,947,961],"p":[[973,982,989,907],[922,931,947,961]]},{"g":"home","n":0,"w":[937,951,977,990,905,935,946,957],"p":[[937,951,977,990],[905,935,946,957]]},{"g":"school","n":1,"w":[914,924,939,950,974,908,930,953],"p":[[914,924,939,950],[974,908,930,953]]},{"g":"school","n":2,"w":[955,960,981,909,921,934,943,945],"p":[[955,960,981,909],[921,934,943,945]]},{"g":"world","n":0,"w":[911,918,949,927],"p":[[911,918,949,927]]},{"g":"nature","n":0,"w":[920,926,948,963,965,988,901,912],"p":[[920,926,948,963],[965,988,901,912]]},{"g":"fun","n":0,"w":[904,906,916,967],"p":[[904,906,916,967]]},{"g":"actions","n":0,"w":[902,925,928,933,936,938,952,962,964,968,972,980],"p":[[902,925,928,933],[936,938,952,962],[964,968,972,980]]},{"g":"mix","n":1,"w":[993,994,997,996,910,983,958,969,978,959,966,975],"p":[[993,994,997,996],[910,983,958,969],[978,959,966,975]]},{"g":"mix","n":2,"w":[998,913,954,979,985,991,984,987,999,915,940,995],"p":[[998,913,954,979],[985,991,984,987],[999,915,940,995]]}]]}</script>
+<script>
+(() => {
+'use strict';
+
+/* ---------- data ---------- */
+const DATA = JSON.parse(document.getElementById('wb-data').textContent);
+const W = DATA.words;          // [word, pic, arabic, pos, group, level, conflictTokens, pictureCount]
+const LV = DATA.levels;        // per level: [{g, n, w:[word idx], p:[[4 idx]...]}]
+const KEY = (() => {
+  const c = {};
+  W.forEach(w => { c[w[0]] = (c[w[0]] || 0) + 1; });
+  return W.map(w => (c[w[0]] > 1 ? w[0] + '@' + w[4] : w[0]));
+})();
+const LW = LV.map((_, L) => W.map((w, i) => (w[5] === L + 1 ? i : -1)).filter(i => i >= 0));
+const TOTAL = W.length;
+
+const META = [
+  { en: 'Chick', ar: 'كتكوت', e: '🐥', c: '#FFC83D' },
+  { en: 'Rabbit', ar: 'أرنب', e: '🐰', c: '#FF9EC0' },
+  { en: 'Fox', ar: 'ثعلب', e: '🦊', c: '#FFA24C' },
+  { en: 'Dolphin', ar: 'دلفين', e: '🐬', c: '#5BCBF5' },
+  { en: 'Owl', ar: 'بومة', e: '🦉', c: '#B9A2FF' },
+  { en: 'Tiger', ar: 'نمر', e: '🐯', c: '#7EDC6A' },
+  { en: 'Falcon', ar: 'صقر', e: '🦅', c: '#34D1BF' },
+  { en: 'Lion', ar: 'أسد', e: '🦁', c: '#FF8A6B' },
+  { en: 'Shark', ar: 'قرش', e: '🦈', c: '#7C9BFF' },
+  { en: 'Dragon', ar: 'تنين', e: '🐉', c: '#F26D6D' },
+];
+const GROUPS = {
+  colors: { en: 'Colors & shapes', ar: 'الألوان والأشكال', e: '🎨' },
+  numbers: { en: 'Numbers', ar: 'الأرقام', e: '🔢' },
+  animals: { en: 'Animals', ar: 'الحيوانات', e: '🐾' },
+  food: { en: 'Food & drink', ar: 'الطعام والشراب', e: '🍎' },
+  people: { en: 'People & body', ar: 'الناس والجسم', e: '👪' },
+  home: { en: 'Home & clothes', ar: 'البيت والملابس', e: '🏠' },
+  school: { en: 'School & things', ar: 'المدرسة والأشياء', e: '🎒' },
+  world: { en: 'Places & transport', ar: 'الأماكن والمواصلات', e: '🚗' },
+  nature: { en: 'Nature & weather', ar: 'الطبيعة والطقس', e: '🌳' },
+  fun: { en: 'Sports & music', ar: 'الرياضة والموسيقى', e: '⚽' },
+  actions: { en: 'Actions', ar: 'الأفعال', e: '🏃' },
+  describe: { en: 'Feelings & describing', ar: 'المشاعر والصفات', e: '😊' },
+  mix: { en: 'Mixed bag', ar: 'منوّعات', e: '🎲' },
+};
+const POS = {
+  n: { en: 'Nouns', ar: 'أسماء' }, v: { en: 'Verbs', ar: 'أفعال' }, a: { en: 'Adjectives', ar: 'صفات' },
+  m: { en: 'Numbers', ar: 'أرقام' }, o: { en: 'Phrases', ar: 'عبارات' }, x: { en: 'Mixed', ar: 'منوّع' },
+};
+const AVATARS = ['🐥', '🐰', '🦊', '🐬', '🦉', '🐯', '🐼', '🐸', '🦄', '🐙', '🚀', '⭐'];
+
+const I18N = {
+  en: {
+    language: 'Language', settings: 'Settings', album: 'My words', levels: 'Levels', level: 'Level', words: 'words',
+    stars: 'Stars', learned: 'Words', streak: 'Day streak', switchPlayer: 'Change player', back: 'Back', close: 'Close',
+    cont: 'Continue', start: 'Start', allDone: 'All 1,000 words done. Play any stage again!',
+    foot: '{0} words · {1} levels · {2} stages',
+    noVoice: 'This view cannot speak. Open the game link in Safari or Chrome to hear the words.',
+    stagesDone: '{0} of {1} stages', challenge: 'Level challenge', challengeTag: '20 words from this level',
+    lockedStage: 'Finish the stage before it first', lockedLevel: 'Win the challenge of Level {0} first',
+    hintMatch: 'Connect each word to its picture', hintListen: 'Tap a speaker, listen, then connect it to the picture',
+    listen: 'Listen', picture: 'Picture', next: 'Next', finish: 'Finish',
+    r3: 'Perfect!', r2: 'Great job!', r1: 'Well done!', mistakes0: 'No mistakes', mistakes: 'Mistakes: {0}',
+    stageWords: 'Tap a word to hear it', nextStage: 'Next stage', nextLevel: 'Start Level {0}', replay: 'Play again', toMap: 'Back to the map',
+    unlocked: 'Level {0} is open: {1}', finishedAll: 'You finished all 10 levels!',
+    albumCount: '{0} of {1} words', all: 'All', albumEmpty: 'No words here yet. Finish a stage and its words will appear.',
+    sLang: 'Language', sSfx: 'Sound effects', sSlow: 'Slow voice', sSlowSub: 'Says each word more slowly', sVoice: 'Voice',
+    sTap: 'Say the word when I tap it', sAr: 'Show the Arabic meaning', sArSub: 'Appears after a correct match',
+    sUnlock: 'Open all levels', sUnlockSub: 'For older learners who want to jump ahead',
+    sTest: 'Test the voice', sReset: 'Reset this player', sReset2: 'Tap again to erase progress', sResetDone: 'Progress erased',
+    savedLocal: 'Progress saves on this device, in this browser.', savedCloud: 'Progress saves on this device and in your Claude account.',
+    cloudLoaded: 'Loaded your saved progress', players: 'Players', addPlayer: 'Add a player', name: 'Name', add: 'Add',
+    playing: 'Playing now', choose: 'Play', del: 'Remove', del2: 'Sure?', maxPlayers: 'Six players is the limit', player: 'Player',
+  },
+  ar: {
+    language: 'اللغة', settings: 'الإعدادات', album: 'كلماتي', levels: 'المستويات', level: 'المستوى', words: 'كلمة',
+    stars: 'النجوم', learned: 'الكلمات', streak: 'أيام متتالية', switchPlayer: 'تغيير اللاعب', back: 'رجوع', close: 'إغلاق',
+    cont: 'أكمل اللعب', start: 'ابدأ', allDone: 'أنهيت الألف كلمة. أعد أي مرحلة متى شئت!',
+    foot: '{0} كلمة · {1} مستويات · {2} مرحلة',
+    noVoice: 'هذه النافذة لا تدعم النطق. افتح رابط اللعبة في متصفح Safari أو Chrome لسماع الكلمات.',
+    stagesDone: '{0} من {1} مرحلة', challenge: 'تحدّي المستوى', challengeTag: '20 كلمة من هذا المستوى',
+    lockedStage: 'أكمل المرحلة السابقة أولًا', lockedLevel: 'اربح تحدّي المستوى {0} أولًا',
+    hintMatch: 'وصّل كل كلمة بصورتها', hintListen: 'اضغط السماعة واستمع ثم وصّلها بالصورة',
+    listen: 'استمع', picture: 'صورة', next: 'التالي', finish: 'إنهاء',
+    r3: 'ممتاز!', r2: 'أحسنت!', r1: 'عمل جيد!', mistakes0: 'بدون أخطاء', mistakes: 'الأخطاء: {0}',
+    stageWords: 'اضغط على الكلمة لسماعها', nextStage: 'المرحلة التالية', nextLevel: 'ابدأ المستوى {0}', replay: 'العب مرة أخرى', toMap: 'العودة للخريطة',
+    unlocked: 'فُتح المستوى {0}: {1}', finishedAll: 'أنهيت المستويات العشرة كلها!',
+    albumCount: '{0} من {1} كلمة', all: 'الكل', albumEmpty: 'لا توجد كلمات هنا بعد. أكمل مرحلة وستظهر كلماتها.',
+    sLang: 'اللغة', sSfx: 'المؤثرات الصوتية', sSlow: 'نطق بطيء', sSlowSub: 'ينطق كل كلمة ببطء', sVoice: 'الصوت',
+    sTap: 'انطق الكلمة عند الضغط عليها', sAr: 'إظهار المعنى بالعربية', sArSub: 'يظهر بعد التوصيل الصحيح',
+    sUnlock: 'فتح كل المستويات', sUnlockSub: 'للمتعلمين الأكبر سنًا',
+    sTest: 'جرّب الصوت', sReset: 'تصفير تقدّم هذا اللاعب', sReset2: 'اضغط مرة أخرى للحذف', sResetDone: 'تم حذف التقدّم',
+    savedLocal: 'يُحفظ التقدّم على هذا الجهاز وفي هذا المتصفح.', savedCloud: 'يُحفظ التقدّم على هذا الجهاز وفي حسابك على Claude.',
+    cloudLoaded: 'تم تحميل تقدّمك المحفوظ', players: 'اللاعبون', addPlayer: 'إضافة لاعب', name: 'الاسم', add: 'إضافة',
+    playing: 'يلعب الآن', choose: 'العب', del: 'حذف', del2: 'متأكد؟', maxPlayers: 'الحد الأقصى ستة لاعبين', player: 'لاعب',
+  },
+};
+
+const svg = (d, cls) => `<svg class="ico ${cls || ''}" viewBox="0 0 24 24" aria-hidden="true">${d}</svg>`;
+const IC = {
+  star: (on) => svg('<path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4 6.2 20.5l1.1-6.5L2.6 9.4l6.5-.9z"/>', on ? 'on' : ''),
+  starSolid: svg('<path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4 6.2 20.5l1.1-6.5L2.6 9.4l6.5-.9z"/>', 'fill'),
+  speaker: svg('<path d="M4 9.5v5h3.5L12 18V6L7.5 9.5z"/><path d="M15.5 9a4.2 4.2 0 010 6"/><path d="M18.2 6.5a7.8 7.8 0 010 11"/>'),
+  back: svg('<path d="M15 5l-7 7 7 7"/>', 'flip'),
+  next: svg('<path d="M9 5l7 7-7 7"/>', 'flip'),
+  sliders: svg('<path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/>'),
+  lock: svg('<rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 018 0v3"/>'),
+  check: svg('<path d="M5 12.5l4.5 4.5L19 7.5"/>'),
+  close: svg('<path d="M6 6l12 12M18 6L6 18"/>'),
+  book: svg('<path d="M5 5.5A2.5 2.5 0 017.5 3H19v15H7.5A2.5 2.5 0 005 20.5z"/><path d="M5 20.5A2.5 2.5 0 017.5 18H19v3H7.5"/>'),
+  flame: svg('<path d="M12 3c1 3.6 5 5.3 5 10a5 5 0 01-10 0c0-2 1-3.2 2-4 .3 1.5 1 2.3 1.8 2.6C10.4 9 10.8 5.6 12 3z"/>'),
+  play: svg('<path d="M8 5.5v13l11-6.5z"/>', 'fill flip'),
+  replay: svg('<path d="M5 12a7 7 0 107-7H7"/><path d="M10 2L7 5l3 3"/>'),
+  plus: svg('<path d="M12 5v14M5 12h14"/>'),
+  map: svg('<path d="M4 6.5l5-2 6 2 5-2v13l-5 2-6-2-5 2z"/><path d="M9 4.5v13M15 6.5v13"/>'),
+};
+const LOGO = '<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="13" fill="var(--sun)" stroke="var(--edge)" stroke-width="2.5"/><path d="M8 30q16-16 32 0" fill="none" stroke="#8A5A2B" stroke-width="6" stroke-linecap="round"/><path d="M8 30q16-16 32 0" fill="none" stroke="#F3D3A2" stroke-width="3.2" stroke-dasharray="2.4 3.4"/><path d="M8 30v8M40 30v8" stroke="#17203D" stroke-width="3.4" stroke-linecap="round"/></svg>';
+
+/* ---------- state ---------- */
+const SAVE_KEY = 'wordbridge.save.v1';
+const today = () => { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+const dayDiff = (a, b) => Math.round((new Date(b + 'T12:00:00') - new Date(a + 'T12:00:00')) / 864e5);
+const newPlayer = (id, name, av) => ({ id, name, av, stars: {}, learned: [], streak: { last: '', n: 0 }, last: null });
+function fresh() {
+  const lang = ((navigator.language || 'en') + '').toLowerCase().startsWith('ar') ? 'ar' : 'en';
+  return { v: 1, updatedAt: 0, cur: 'p1', players: [newPlayer('p1', (lang === 'ar' ? 'لاعب' : 'Player') + ' 1', '🐥')],
+    settings: { lang, sfx: true, slow: false, sayTap: true, showAr: lang === 'ar', unlockAll: false, voice: '' } };
+}
+function normalize(s) {
+  const f = fresh();
+  if (!s || s.v !== 1 || !Array.isArray(s.players) || !s.players.length) return f;
+  s.settings = Object.assign(f.settings, s.settings || {});
+  s.players = s.players.slice(0, 6).map((p, i) => Object.assign(newPlayer('p' + (i + 1), 'Player ' + (i + 1), AVATARS[i]), p));
+  s.players.forEach(p => { if (!Array.isArray(p.learned)) p.learned = []; if (!p.stars || typeof p.stars !== 'object') p.stars = {}; if (!p.streak) p.streak = { last: '', n: 0 }; });
+  if (!s.players.some(p => p.id === s.cur)) s.cur = s.players[0].id;
+  s.updatedAt = +s.updatedAt || 0;
+  return s;
+}
+function loadState() {
+  try { const raw = localStorage.getItem(SAVE_KEY); if (raw) return normalize(JSON.parse(raw)); } catch (e) { /* storage unavailable */ }
+  return fresh();
+}
+let S = loadState();
+function save() {
+  S.updatedAt = Date.now();
+  try { localStorage.setItem(SAVE_KEY, JSON.stringify(S)); } catch (e) { /* storage unavailable */ }
+  Cloud.push();
+}
+const P = () => S.players.find(p => p.id === S.cur) || S.players[0];
+let lc = { src: null, set: null };
+const learnedSet = () => { const p = P(); if (lc.src !== p.learned) lc = { src: p.learned, set: new Set(p.learned) }; return lc.set; };
+const lang = () => (S.settings.lang === 'ar' ? 'ar' : 'en');
+const t = (k, ...a) => { let s = I18N[lang()][k]; if (s == null) s = I18N.en[k] != null ? I18N.en[k] : k; a.forEach((v, i) => { s = s.replace('{' + i + '}', v); }); return s; };
+const esc = (s) => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const shuffle = (a) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+/* ---------- progress rules ---------- */
+const sid = (L, s) => L + '-' + s;
+const isDone = (p, L, s) => (p.stars[sid(L, s)] || 0) > 0;
+function isOpen(p, L, s) {
+  if (S.settings.unlockAll) return true;
+  if (s === 'c') return LV[L].every((_, i) => isDone(p, L, i));
+  if (s === 0) return L === 0 || isDone(p, L - 1, 'c');
+  return isDone(p, L, s - 1);
+}
+function nextTarget(p) {
+  for (let L = 0; L < LV.length; L++) {
+    for (let s = 0; s < LV[L].length; s++) if (!isDone(p, L, s)) return { L, s };
+    if (!isDone(p, L, 'c')) return { L, s: 'c' };
+  }
+  return null;
+}
+function nextAfter(L, s) {
+  if (s === 'c') return L + 1 < LV.length ? { L: L + 1, s: 0 } : null;
+  return s + 1 < LV[L].length ? { L, s: s + 1 } : { L, s: 'c' };
+}
+const stageName = (L, s) => (s === 'c' ? t('challenge') : GROUPS[LV[L][s].g][lang()] + (LV[L][s].n ? ' ' + LV[L][s].n : ''));
+function stagePos(st) {
+  const c = {}; st.w.forEach(i => { c[W[i][3]] = (c[W[i][3]] || 0) + 1; });
+  const top = Object.keys(c).sort((a, b) => c[b] - c[a])[0];
+  return c[top] / st.w.length >= 0.75 ? top : 'x';
+}
+function totals(p) {
+  let stars = 0; Object.keys(p.stars).forEach(k => { stars += p.stars[k]; });
+  const d = p.streak.last ? dayDiff(p.streak.last, today()) : 99;
+  return { stars, words: p.learned.length, streak: d <= 1 ? p.streak.n : 0 };
+}
+function bumpStreak(p) {
+  const td = today();
+  if (p.streak.last === td) return;
+  p.streak.n = p.streak.last && dayDiff(p.streak.last, td) === 1 ? p.streak.n + 1 : 1;
+  p.streak.last = td;
+}
+
+/* ---------- voice + sound ---------- */
+let toastTimer = 0;
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg; el.hidden = false;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.hidden = true; }, 3200);
+}
+const Speech = (() => {
+  const synth = ('speechSynthesis' in window) ? window.speechSynthesis : null;
+  let voices = [], chosen = null, unlocked = false, warned = false;
+  const score = (v) => {
+    let s = 0; const n = v.name || '';
+    if (/en[-_]US/i.test(v.lang)) s += 3; else if (/en[-_]GB/i.test(v.lang)) s += 2;
+    if (/Samantha|Ava|Allison|Google US English|Aria|Jenny|Zira|Karen|Daniel|Serena|Google UK English Female/i.test(n)) s += 4;
+    if (/Enhanced|Premium|Natural|Neural/i.test(n)) s += 3;
+    if (/Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Wobble|Whisper|Zarvox|Trinoids|Organ|Jester|Junior|Ralph|Fred|Good News|Superstar|Deranged|Hysterical|Princess|Kathy|Grandma|Grandpa|Rocko|Shelley|Sandy|Eddy|Flo|Reed/i.test(n)) s -= 10;
+    return s;
+  };
+  function pick() {
+    chosen = voices.find(v => v.voiceURI === S.settings.voice) || voices.slice().sort((a, b) => score(b) - score(a))[0] || null;
+  }
+  function load() {
+    try { voices = synth.getVoices().filter(v => /^en([-_]|$)/i.test(v.lang || '')); } catch (e) { voices = []; }
+    pick();
+  }
+  if (synth) { load(); if (synth.addEventListener) synth.addEventListener('voiceschanged', load); }
+  function warn() { if (!warned) { warned = true; toast(t('noVoice')); } }
+  return {
+    ok: !!synth,
+    list: () => voices,
+    repick: pick,
+    unlock() {
+      if (unlocked || !synth) return; unlocked = true;
+      try { const u = new SpeechSynthesisUtterance(' '); u.volume = 0; synth.speak(u); } catch (e) { /* ignore */ }
+    },
+    say(text) {
+      if (!synth) { warn(); return; }
+      try {
+        const wasBusy = synth.speaking || synth.pending;
+        if (wasBusy) synth.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        if (chosen) { u.voice = chosen; u.lang = chosen.lang; } else u.lang = 'en-US';
+        u.rate = S.settings.slow ? 0.55 : 0.85; u.pitch = 1.05;
+        u.onerror = (e) => { if (e && e.error && !/interrupted|canceled/.test(e.error)) warn(); };
+        if (wasBusy) setTimeout(() => { try { synth.speak(u); } catch (e) { warn(); } }, 70); else synth.speak(u);
+      } catch (e) { warn(); }
+    },
+  };
+})();
+const sayWord = (i) => Speech.say(W[i][0]);
+const Sfx = (() => {
+  let ctx = null;
+  function ac() {
+    try {
+      if (!ctx) { const C = window.AudioContext || window.webkitAudioContext; if (!C) return null; ctx = new C(); }
+      if (ctx.state === 'suspended') ctx.resume();
+    } catch (e) { return null; }
+    return ctx;
+  }
+  function tone(f, at, dur, type, g) {
+    if (!S.settings.sfx) return; const a = ac(); if (!a) return;
+    const o = a.createOscillator(), v = a.createGain(), t0 = a.currentTime + at;
+    o.type = type || 'triangle'; o.frequency.value = f;
+    v.gain.setValueAtTime(0.0001, t0); v.gain.linearRampToValueAtTime(g || 0.16, t0 + 0.015); v.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    o.connect(v); v.connect(a.destination); o.start(t0); o.stop(t0 + dur + 0.03);
+  }
+  return {
+    unlock: ac,
+    ok() { tone(660, 0, 0.14); tone(990, 0.1, 0.24); },
+    no() { tone(196, 0, 0.16, 'square', 0.07); tone(147, 0.12, 0.22, 'square', 0.07); },
+    tap() { tone(520, 0, 0.05, 'sine', 0.07); },
+    page() { [523, 659, 784].forEach((f, i) => tone(f, i * 0.09, 0.2)); },
+    win() { [523, 659, 784, 1047, 1319].forEach((f, i) => tone(f, i * 0.11, 0.34)); },
+  };
+})();
+
+/* ---------- optional account sync (signed-in viewers who may write) ---------- */
+const Cloud = (() => {
+  let ref = null, busy = false, dirty = false, timer = 0, on = false;
+  async function flush() {
+    if (!ref || busy) { dirty = true; return; }
+    busy = true; dirty = false;
+    try { await ref.set({ v: 1, updatedAt: S.updatedAt, state: JSON.stringify(S) }); on = true; }
+    catch (e) { if (e && (e.code === 'invalid_argument' || e.code === 'not_granted' || e.code === 'revoked')) { ref = null; on = false; } }
+    busy = false;
+    if (dirty && ref) flush();
+  }
+  return {
+    isOn: () => on,
+    push() { if (!ref) return; clearTimeout(timer); timer = setTimeout(flush, 1500); },
+    async init() {
+      try {
+        if (!window.claude || typeof window.claude.use !== 'function') return;
+        const [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
+        if (!db || !user) return;
+        const uid = await user.id();
+        if (!uid) return;
+        const r = db.doc('data/users/' + uid + '/save');
+        const snap = await r.get();
+        ref = r;
+        let remoteAt = 0;
+        if (snap.exists) {
+          const d = snap.data() || {}; remoteAt = +d.updatedAt || 0;
+          if (remoteAt > S.updatedAt && typeof d.state === 'string') {
+            S = normalize(JSON.parse(d.state)); S.updatedAt = remoteAt;
+            try { localStorage.setItem(SAVE_KEY, JSON.stringify(S)); } catch (e) { /* ignore */ }
+            applyLang();
+            if (route.name !== 'play') render();
+            toast(t('cloudLoaded'));
+          }
+          on = true;
+        }
+        if (S.updatedAt > remoteAt) flush();
+      } catch (e) { ref = null; on = false; }
+    },
+  };
+})();
+
+/* ---------- pictures ---------- */
+const SHAPES = {
+  circle: '<circle cx="50" cy="50" r="40"/>',
+  square: '<rect x="13" y="13" width="74" height="74" rx="4"/>',
+  triangle: '<path d="M50 10 92 86H8z"/>',
+  rectangle: '<rect x="5" y="27" width="90" height="46" rx="4"/>',
+  oval: '<ellipse cx="50" cy="50" rx="45" ry="28"/>',
+  hexagon: '<path d="M27 10h46l23 40-23 40H27L4 50z"/>',
+  line: '<path class="open" d="M12 80 88 20"/>',
+  arrow: '<path class="open" d="M8 50h70M56 26l24 24-24 24"/>',
+};
+function picHTML(w) {
+  const pic = w[1];
+  if (pic.startsWith('c:')) return `<svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6c17-3 34 6 40 22 6 15 3 34-9 46-12 13-33 19-49 13C16 81 5 66 6 49 7 31 16 14 32 9c6-2 12-2 18-3z" fill="${pic.slice(2)}" stroke="var(--blob-edge)" stroke-width="4"/></svg>`;
+  if (pic.startsWith('s:')) return `<svg class="shape" viewBox="0 0 100 100" aria-hidden="true">${SHAPES[pic.slice(2)] || ''}</svg>`;
+  if (pic.startsWith('n:')) { const s = pic.slice(2); return `<span class="numwrap"><span style="font-size:${Math.min(1, 4.2 / s.length).toFixed(2)}em">${esc(s)}</span></span>`; }
+  if (pic.startsWith('big:') || pic.startsWith('small:')) {
+    const big = pic.startsWith('big:'), e = pic.slice(pic.indexOf(':') + 1);
+    return `<span class="cmp ${big ? 'is-big' : 'is-small'}"><span class="cmp-s">${e}</span><span class="cmp-b">${e}</span></span>`;
+  }
+  return `<span class="emo emo-${Math.min(w[7] || 1, 3)}">${pic}</span>`;
+}
+const starsHTML = (n, big) => `<span class="${big ? 'bigstars' : 'stars'}">${[1, 2, 3].map(i => IC.star(i <= n)).join('')}</span>`;
+
+/* ---------- screens ---------- */
+const app = document.getElementById('app');
+let route = { name: 'home' };
+let albumFilter = 'all';
+let G = null;
+function applyLang() {
+  document.documentElement.lang = lang();
+  document.documentElement.dir = lang() === 'ar' ? 'rtl' : 'ltr';
+}
+function go(r) { route = r; render(); }
+function render() {
+  const views = { home: vHome, level: vLevel, play: vPlay, done: vDone, album: vAlbum, settings: vSettings, players: vPlayers };
+  app.innerHTML = (views[route.name] || vHome)();
+  if (route.name === 'play') bindBoard();
+  const sc = app.querySelector('.scroll'); if (sc) sc.scrollTop = 0;
+  if (route.name === 'level') { const n = app.querySelector('.node.next'); if (n && n.scrollIntoView) n.scrollIntoView({ block: 'center' }); }
+}
+const topBar = (title, to, extra) => `<header class="top"><button class="btn icon" data-act="nav" data-to="${to}" aria-label="${t('back')}">${IC.back}</button><h1>${title}</h1>${extra || ''}</header>`;
+
+function vHome() {
+  const p = P(), tt = totals(p), nx = nextTarget(p), lg = lang();
+  const started = Object.keys(p.stars).length > 0;
+  const label = nx ? `${started ? t('cont') : t('start')} · ${t('level')} ${nx.L + 1} · ${stageName(nx.L, nx.s)}` : t('allDone');
+  const ls = learnedSet();
+  const levels = LV.map((st, L) => {
+    const M = META[L], open = isOpen(p, L, 0);
+    const lw = LW[L].reduce((n, i) => n + (ls.has(KEY[i]) ? 1 : 0), 0);
+    let stars = 0; for (let s = 0; s < st.length; s++) stars += p.stars[sid(L, s)] || 0; stars += p.stars[sid(L, 'c')] || 0;
+    return `<button class="lvl ${open ? '' : 'locked'}" data-act="level" data-l="${L}" style="--c:${M.c}">
+      <span class="badge emoji">${M.e}</span>
+      <span style="min-width:0;display:block"><span class="name" style="display:block">${t('level')} ${L + 1} · ${M[lg]}</span>
+      <span class="meta" style="display:block">${lw}/${LW[L].length} ${t('words')}</span>
+      <span class="bar" style="display:block;--p:${Math.round(lw / LW[L].length * 100)}%"><i></i></span></span>
+      <span class="side">${open ? `<span style="display:inline-flex;align-items:center;gap:4px">${IC.starSolid}${stars}</span>` : IC.lock}</span></button>`;
+  }).join('');
+  const stageCount = LV.reduce((n, l) => n + l.length, 0);
+  return `<div class="screen">
+    <header class="top"><div class="brand">${LOGO}<h1>Word Bridge</h1></div><div class="top-actions">
+      <button class="btn icon" data-act="lang" aria-label="${t('language')}">${lg === 'ar' ? 'EN' : 'ع'}</button>
+      <button class="btn icon" data-act="nav" data-to="settings" aria-label="${t('settings')}">${IC.sliders}</button></div></header>
+    <div class="scroll">
+      <section class="hero">
+        <button class="who" data-act="nav" data-to="players"><span class="av emoji">${esc(p.av)}</span><span style="min-width:0"><b>${esc(p.name)}</b><small>${t('switchPlayer')}</small></span></button>
+        <div class="stats">
+          <div class="stat"><b>${IC.starSolid}${tt.stars}</b><span>${t('stars')}</span></div>
+          <div class="stat"><b>${IC.book}${tt.words}</b><span>${t('learned')}</span></div>
+          <div class="stat"><b>${IC.flame}${tt.streak}</b><span>${t('streak')}</span></div>
+        </div>
+        <button class="btn primary big" data-act="continue">${IC.play}<span>${label}</span></button>
+        <button class="btn wide" data-act="nav" data-to="album">${IC.book}<span>${t('album')}</span></button>
+      </section>
+      ${Speech.ok ? '' : `<p class="notice">${t('noVoice')}</p>`}
+      <h2 class="sec">${t('levels')}</h2>
+      <div class="levels">${levels}</div>
+      <p class="foot">${t('foot', TOTAL.toLocaleString('en-US'), LV.length, stageCount)}</p>
+    </div></div>`;
+}
+
+function vLevel() {
+  const L = route.L, p = P(), M = META[L], lg = lang(), st = LV[L];
+  const DX = [0, 46, 72, 46, 0, -46, -72, -46];
+  let nextIdx = -1;
+  for (let s = 0; s < st.length; s++) if (!isDone(p, L, s) && isOpen(p, L, s)) { nextIdx = s; break; }
+  if (nextIdx < 0 && !isDone(p, L, 'c') && isOpen(p, L, 'c')) nextIdx = 'c';
+  const doneN = st.reduce((n, _, s) => n + (isDone(p, L, s) ? 1 : 0), 0) + (isDone(p, L, 'c') ? 1 : 0);
+  const node = (s, i) => {
+    const open = isOpen(p, L, s), g = s === 'c' ? { e: '🏆' } : GROUPS[st[s].g];
+    const tag = s === 'c' ? t('challengeTag') : `${POS[stagePos(st[s])][lg]} · ${st[s].w.length} ${t('words')}`;
+    return `<button class="node ${open ? '' : 'locked'} ${nextIdx === s ? 'next' : ''}" style="--dx:${DX[i % 8]}px;--c:${M.c}" data-act="stage" data-l="${L}" data-s="${s}">
+      <span class="disc"><span class="emoji">${g.e}</span>${open ? '' : `<span class="lockbadge">${IC.lock}</span>`}</span>
+      ${starsHTML(p.stars[sid(L, s)] || 0)}<span class="lbl">${stageName(L, s)}</span><span class="tag">${tag}</span></button>`;
+  };
+  return `<div class="screen">${topBar(`${t('level')} ${L + 1}`, 'home')}
+    <div class="lvl-head" style="--c:${M.c}"><span class="m emoji">${M.e}</span><span><b>${M[lg]}</b><span>${t('stagesDone', doneN, st.length + 1)}</span></span></div>
+    <div class="scroll"><div class="path">${st.map((_, s) => node(s, s)).join('')}${node('c', st.length)}</div></div></div>`;
+}
+
+/* ---------- play ---------- */
+const conflict = (a, b) => { const A = W[a][6], B = W[b][6]; for (let i = 0; i < A.length; i++) if (B.indexOf(A[i]) >= 0) return true; return false; };
+function pickClean(pool, n) {
+  const out = [];
+  shuffle(pool.slice()).forEach(i => { if (out.length < n && out.indexOf(i) < 0 && out.every(j => !conflict(i, j))) out.push(i); });
+  return out;
+}
+function buildPages(L, s) {
+  if (s === 'c') {
+    const pool = shuffle(LW[L].slice()), pages = [];
+    pool.forEach(i => {
+      for (let k = 0; k < pages.length; k++) if (pages[k].length < 4 && pages[k].every(j => !conflict(i, j))) { pages[k].push(i); return; }
+      if (pages.length < 5) pages.push([i]);
+    });
+    return pages.filter(pg => pg.length === 4).map(w => ({ w, listen: false }));
+  }
+  const st = LV[L][s], pages = st.p.map(w => ({ w: w.slice(), listen: false }));
+  if (Speech.ok) { const rv = pickClean(st.w, 4); if (rv.length === 4) pages.push({ w: rv, listen: true }); }
+  return pages;
+}
+function startStage(L, s) {
+  G = { L, s, pages: buildPages(L, s), pi: 0, mistakes: 0, matched: 0, sel: null, lock: false, order: null };
+  go({ name: 'play' });
+}
+function vPlay() {
+  const pg = G.pages[G.pi];
+  const left = shuffle(pg.w.slice()); let right = shuffle(pg.w.slice()), guard = 0;
+  while (right.every((x, i) => x === left[i]) && guard++ < 6) right = shuffle(right);
+  G.matched = 0; G.sel = null; G.lock = false; G.pairs = [];
+  const dots = G.pages.map((_, i) => `<i class="${i < G.pi ? 'on' : i === G.pi ? 'cur' : ''}"></i>`).join('');
+  const kOf = (w) => Math.min(1, 8.5 / Math.max.apply(null, w[0].split(' ').map(x => x.length))).toFixed(2);
+  const wordCard = (i) => {
+    const w = W[i];
+    return pg.listen
+      ? `<div class="card word" role="button" tabindex="0" data-w="${i}" aria-label="${t('listen')}"><span class="w-ear">${IC.speaker}</span><span class="w-text" style="--k:${kOf(w)}" hidden>${esc(w[0])}</span><span class="w-ar" hidden>${esc(w[2])}</span></div>`
+      : `<div class="card word" role="button" tabindex="0" data-w="${i}"><span class="w-text" style="--k:${kOf(w)}">${esc(w[0])}</span><span class="w-ar" hidden>${esc(w[2])}</span></div>`;
+  };
+  const picCard = (i) => `<div class="card pic" role="button" tabindex="0" data-w="${i}" aria-label="${t('picture')}">${picHTML(W[i])}${pg.listen ? '' : `<button class="say" type="button" data-act="say" data-say="${i}" aria-label="${t('listen')}">${IC.speaker}</button>`}</div>`;
+  return `<div class="screen play">
+    <header class="top"><button class="btn icon" data-act="quit" aria-label="${t('close')}">${IC.close}</button><div class="dots">${dots}</div><span style="width:48px;flex:none"></span></header>
+    <p class="hint">${pg.listen ? t('hintListen') : t('hintMatch')}</p>
+    <div class="board" dir="ltr"><svg class="wires" aria-hidden="true"></svg>
+      <div class="col col-w">${left.map(wordCard).join('')}</div><div class="col col-p">${right.map(picCard).join('')}</div></div>
+    <div class="playfoot"><span class="count" dir="ltr">0 / 4</span></div></div>`;
+}
+const NS = 'http://www.w3.org/2000/svg';
+let board = null, wires = null, drag = null;
+const isWord = (c) => c.classList.contains('word');
+function anchor(card) {
+  const b = board.getBoundingClientRect(), r = card.getBoundingClientRect();
+  return { x: (isWord(card) ? r.right : r.left) - b.left, y: r.top + r.height / 2 - b.top };
+}
+function pathD(a, b) {
+  const sag = Math.min(14, Math.abs(b.x - a.x) * 0.12);
+  return `M${a.x.toFixed(1)},${a.y.toFixed(1)} Q${((a.x + b.x) / 2).toFixed(1)},${((a.y + b.y) / 2 + sag).toFixed(1)} ${b.x.toFixed(1)},${b.y.toFixed(1)}`;
+}
+function mk(tag, attrs) { const e = document.createElementNS(NS, tag); Object.keys(attrs).forEach(k => e.setAttribute(k, attrs[k])); return e; }
+function cardsFor(i) { return [board.querySelector(`.word[data-w="${i}"]`), board.querySelector(`.pic[data-w="${i}"]`)]; }
+function drawBridges() {
+  if (!board) return;
+  wires.querySelectorAll('.bridge').forEach(n => n.remove());
+  G.pairs.forEach(i => {
+    const c = cardsFor(i), d = pathD(anchor(c[0]), anchor(c[1])), g = mk('g', { class: 'bridge' });
+    g.appendChild(mk('path', { d, fill: 'none', stroke: 'var(--rope)', 'stroke-width': 13, 'stroke-linecap': 'round' }));
+    g.appendChild(mk('path', { d, fill: 'none', stroke: 'var(--plank)', 'stroke-width': 7.5, 'stroke-dasharray': '3 6' }));
+    wires.appendChild(g);
+  });
+}
+function clearSel() { if (G.sel) G.sel.classList.remove('sel'); G.sel = null; }
+function tapCard(c) {
+  if (c.classList.contains('done') || G.lock) return;
+  const pg = G.pages[G.pi];
+  if (isWord(c) && (S.settings.sayTap || pg.listen)) sayWord(+c.dataset.w); else Sfx.tap();
+  if (G.sel && G.sel !== c && isWord(G.sel) !== isWord(c)) { const a = G.sel; clearSel(); attempt(a, c); return; }
+  if (G.sel === c) { clearSel(); return; }
+  clearSel(); G.sel = c; c.classList.add('sel');
+}
+function attempt(a, b) {
+  const wc = isWord(a) ? a : b, pc = isWord(a) ? b : a;
+  if (wc.dataset.w === pc.dataset.w) {
+    const i = +wc.dataset.w;
+    [wc, pc].forEach(c => { c.classList.remove('sel', 'bad'); c.classList.add('done'); c.setAttribute('aria-disabled', 'true'); });
+    const tx = wc.querySelector('.w-text'); tx.hidden = false;
+    const ear = wc.querySelector('.w-ear'); if (ear) ear.hidden = true;
+    if (S.settings.showAr) wc.querySelector('.w-ar').hidden = false;
+    const tick = document.createElement('span'); tick.className = 'tick'; tick.innerHTML = IC.check; pc.appendChild(tick);
+    G.pairs.push(i); G.matched++; drawBridges();
+    Sfx.ok(); setTimeout(() => sayWord(i), 260);
+    const p = P(), ls = learnedSet();
+    if (!ls.has(KEY[i])) { p.learned.push(KEY[i]); ls.add(KEY[i]); }
+    const cnt = app.querySelector('.count'); if (cnt) cnt.textContent = G.matched + ' / 4';
+    if (G.matched === 4) pageComplete();
+  } else {
+    G.mistakes++; G.lock = true; Sfx.no();
+    const line = mk('path', { d: pathD(anchor(wc), anchor(pc)), fill: 'none', stroke: 'var(--bad)', 'stroke-width': 7, 'stroke-linecap': 'round', 'stroke-dasharray': '2 12' });
+    wires.appendChild(line);
+    [wc, pc].forEach(c => c.classList.add('bad'));
+    setTimeout(() => { line.remove(); [wc, pc].forEach(c => c.classList.remove('bad')); G.lock = false; }, 520);
+  }
+}
+function pageComplete() {
+  save();
+  const last = G.pi === G.pages.length - 1;
+  setTimeout(() => {
+    if (route.name !== 'play') return;
+    Sfx.page();
+    const f = app.querySelector('.playfoot');
+    if (f) { f.innerHTML = `<button class="btn primary big" data-act="nextpage"><span>${last ? t('finish') : t('next')}</span>${IC.next}</button>`; }
+  }, 650);
+}
+function finishStage() {
+  const p = P(), id = sid(G.L, G.s);
+  const stars = G.mistakes === 0 ? 3 : G.mistakes <= 2 ? 2 : 1, prev = p.stars[id] || 0;
+  if (stars > prev) p.stars[id] = stars;
+  bumpStreak(p); p.last = { L: G.L, s: G.s };
+  save();
+  const seen = []; G.pages.forEach(pg => pg.w.forEach(i => { if (seen.indexOf(i) < 0) seen.push(i); }));
+  go({ name: 'done', L: G.L, s: G.s, stars, mistakes: G.mistakes, first: prev === 0, words: seen });
+  Sfx.win(); confetti();
+}
+function bindBoard() {
+  board = app.querySelector('.board'); wires = board.querySelector('.wires'); drag = null;
+  const temp = mk('path', { fill: 'none', stroke: 'var(--ink)', 'stroke-width': 5, 'stroke-linecap': 'round', 'stroke-dasharray': '1 10', opacity: 0.7 });
+  const endDrag = () => { if (temp.parentNode) temp.remove(); drag = null; };
+  board.addEventListener('pointerdown', (e) => {
+    if (e.target.closest('.say')) return;
+    const c = e.target.closest('.card');
+    if (!c || c.classList.contains('done') || G.lock || drag) return;
+    e.preventDefault();
+    drag = { from: c, x: e.clientX, y: e.clientY, moved: false, id: e.pointerId };
+    try { board.setPointerCapture(e.pointerId); } catch (err) { /* ignore */ }
+  });
+  board.addEventListener('pointermove', (e) => {
+    if (!drag || e.pointerId !== drag.id) return;
+    if (!drag.moved && Math.hypot(e.clientX - drag.x, e.clientY - drag.y) > 12) {
+      drag.moved = true; clearSel(); G.sel = drag.from; drag.from.classList.add('sel');
+      if (isWord(drag.from) && (S.settings.sayTap || G.pages[G.pi].listen)) sayWord(+drag.from.dataset.w);
+      wires.appendChild(temp);
+    }
+    if (drag.moved) {
+      const b = board.getBoundingClientRect(), a = anchor(drag.from);
+      temp.setAttribute('d', `M${a.x},${a.y} L${e.clientX - b.left},${e.clientY - b.top}`);
+    }
+  });
+  board.addEventListener('pointerup', (e) => {
+    if (!drag || e.pointerId !== drag.id) return;
+    const d = drag; endDrag();
+    if (!d.moved) { tapCard(d.from); return; }
+    const hit = document.elementFromPoint(e.clientX, e.clientY);
+    const target = hit && hit.closest ? hit.closest('.card') : null;
+    if (target && target !== d.from && board.contains(target) && !target.classList.contains('done') && isWord(target) !== isWord(d.from)) { clearSel(); attempt(d.from, target); }
+  });
+  board.addEventListener('pointercancel', endDrag);
+  board.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const c = e.target.closest('.card'); if (!c || e.target.closest('.say')) return;
+    e.preventDefault(); tapCard(c);
+  });
+}
+
+function vDone() {
+  const r = route, lg = lang(), nx = nextAfter(r.L, r.s), p = P();
+  const canNext = nx && isOpen(p, nx.L, nx.s);
+  let unlock = '';
+  if (r.s === 'c') {
+    unlock = nx ? `<p class="unlock" style="--c:${META[nx.L].c}"><span class="emoji">${META[nx.L].e}</span> ${t('unlocked', nx.L + 1, META[nx.L][lg])}</p>` : `<p class="unlock" style="--c:${META[r.L].c}">${t('finishedAll')}</p>`;
+  }
+  const chips = r.words.map(i => `<button class="chip" data-act="say" data-say="${i}"><span class="pc">${picHTML(W[i])}</span><span class="tx"><b>${esc(W[i][0])}</b>${S.settings.showAr ? `<small dir="rtl">${esc(W[i][2])}</small>` : ''}</span></button>`).join('');
+  const nextBtn = canNext ? `<button class="btn primary big" data-act="stage" data-l="${nx.L}" data-s="${nx.s}"><span>${nx.s === 0 && r.s === 'c' ? t('nextLevel', nx.L + 1) : t('nextStage')}</span>${IC.next}</button>` : '';
+  return `<div class="screen done"><div class="scroll">
+    ${starsHTML(r.stars, true)}
+    <h2>${t('r' + r.stars)}</h2>
+    <p class="sub">${t('level')} ${r.L + 1} · ${stageName(r.L, r.s)} · ${r.mistakes ? t('mistakes', r.mistakes) : t('mistakes0')}</p>
+    ${unlock}
+    <div class="stack">${nextBtn}
+      <div class="row"><button class="btn" data-act="stage" data-l="${r.L}" data-s="${r.s}">${IC.replay}<span>${t('replay')}</span></button>
+      <button class="btn" data-act="level" data-l="${r.L}">${IC.map}<span>${t('toMap')}</span></button></div></div>
+    <p class="sub">${t('stageWords')}</p>
+    <div class="chips">${chips}</div></div></div>`;
+}
+
+function vAlbum() {
+  const ls = learnedSet(), lg = lang();
+  const idx = []; W.forEach((w, i) => { if (ls.has(KEY[i]) && (albumFilter === 'all' || w[3] === albumFilter)) idx.push(i); });
+  const pills = ['all', 'n', 'v', 'a', 'm'].map(k => `<button class="pill ${albumFilter === k ? 'on' : ''}" data-act="filter" data-f="${k}">${k === 'all' ? t('all') : POS[k][lg]}</button>`).join('');
+  const chips = idx.map(i => `<button class="chip" data-act="say" data-say="${i}"><span class="pc">${picHTML(W[i])}</span><span class="tx"><b>${esc(W[i][0])}</b>${S.settings.showAr ? `<small dir="rtl">${esc(W[i][2])}</small>` : ''}</span></button>`).join('');
+  return `<div class="screen">${topBar(t('album'), 'home')}
+    <p style="font-weight:800">${t('albumCount', ls.size, TOTAL.toLocaleString('en-US'))}</p>
+    <div class="filters">${pills}</div>
+    <div class="scroll">${idx.length ? `<div class="chips">${chips}</div>` : `<p class="empty">${t('albumEmpty')}</p>`}</div></div>`;
+}
+
+function vSettings() {
+  const s = S.settings, sw = (k) => `<button class="sw ${s[k] ? 'on' : ''}" role="switch" aria-checked="${!!s[k]}" data-act="toggle" data-k="${k}" id="sw-${k}"></button>`;
+  const voices = Speech.list();
+  const voiceLine = voices.length > 1 ? `<div class="line"><span>${t('sVoice')}</span><select id="voice-sel" data-change="voice">${voices.map(v => `<option value="${esc(v.voiceURI)}" ${v.voiceURI === s.voice ? 'selected' : ''}>${esc(v.name)}</option>`).join('')}</select></div>` : '';
+  return `<div class="screen">${topBar(t('settings'), 'home')}<div class="scroll">
+    <div class="set">
+      <div class="line"><span>${t('sLang')}</span><span class="seg" style="flex:none"><button class="${s.lang === 'ar' ? 'on' : ''}" data-act="setlang" data-v="ar">العربية</button><button class="${s.lang !== 'ar' ? 'on' : ''}" data-act="setlang" data-v="en">English</button></span></div>
+      <div class="line"><span>${t('sAr')}<small>${t('sArSub')}</small></span>${sw('showAr')}</div>
+    </div>
+    <div class="set">
+      <div class="line"><span>${t('sSfx')}</span>${sw('sfx')}</div>
+      <div class="line"><span>${t('sTap')}</span>${sw('sayTap')}</div>
+      <div class="line"><span>${t('sSlow')}<small>${t('sSlowSub')}</small></span>${sw('slow')}</div>
+      ${voiceLine}
+      <div class="line"><span></span><button class="btn" data-act="testvoice">${IC.speaker}<span>${t('sTest')}</span></button></div>
+    </div>
+    <div class="set">
+      <div class="line"><span>${t('sUnlock')}<small>${t('sUnlockSub')}</small></span>${sw('unlockAll')}</div>
+    </div>
+    <button class="btn wide" data-act="nav" data-to="players"><span>${t('players')}</span></button>
+    <button class="btn wide danger" data-act="reset" id="reset-btn"><span>${t('sReset')}</span></button>
+    <p class="foot">${Cloud.isOn() ? t('savedCloud') : t('savedLocal')}</p>
+  </div></div>`;
+}
+
+let newAv = AVATARS[1];
+function vPlayers() {
+  const rows = S.players.map(p => {
+    const cur = p.id === S.cur, tt = totals(p);
+    return `<div class="pl ${cur ? 'cur' : ''}"><span class="av emoji">${esc(p.av)}</span><span class="nm">${esc(p.name)}<small>${tt.words} ${t('words')} · ${tt.stars} ${t('stars')}</small></span>
+      ${cur ? `<span style="font-weight:800;font-size:13px">${t('playing')}</span>` : `<button class="btn" data-act="pick" data-id="${p.id}">${t('choose')}</button><button class="btn icon" data-act="delp" data-id="${p.id}" aria-label="${t('del')}">${IC.close}</button>`}</div>`;
+  }).join('');
+  const form = S.players.length < 6 ? `<div class="form"><label for="pl-name">${t('addPlayer')}</label>
+      <input type="text" id="pl-name" maxlength="14" placeholder="${t('name')}" autocomplete="off">
+      <div class="avs">${AVATARS.map(a => `<button class="emoji ${a === newAv ? 'on' : ''}" data-act="av" data-av="${a}" aria-label="avatar">${a}</button>`).join('')}</div>
+      <button class="btn primary" data-act="addp">${IC.plus}<span>${t('add')}</span></button></div>` : `<p class="foot">${t('maxPlayers')}</p>`;
+  return `<div class="screen">${topBar(t('players'), 'home')}<div class="scroll"><div class="players">${rows}</div>${form}</div></div>`;
+}
+
+/* ---------- actions ---------- */
+let resetArmed = 0;
+const ACT = {
+  nav(b) { go({ name: b.dataset.to }); },
+  lang() { ACT.setlang({ dataset: { v: lang() === 'ar' ? 'en' : 'ar' } }); },
+  setlang(b) { S.settings.lang = b.dataset.v; if (b.dataset.v === 'ar') S.settings.showAr = true; applyLang(); save(); render(); },
+  continue() { const nx = nextTarget(P()); if (nx) startStage(nx.L, nx.s); else go({ name: 'album' }); },
+  level(b) {
+    const L = +b.dataset.l;
+    if (!isOpen(P(), L, 0)) { Sfx.no(); toast(t('lockedLevel', L)); return; }
+    go({ name: 'level', L });
+  },
+  stage(b) {
+    const L = +b.dataset.l, s = b.dataset.s === 'c' ? 'c' : +b.dataset.s;
+    if (!isOpen(P(), L, s)) { Sfx.no(); toast(s === 0 ? t('lockedLevel', L) : t('lockedStage')); return; }
+    startStage(L, s);
+  },
+  quit() { const L = G ? G.L : 0; G = null; go({ name: 'level', L }); },
+  nextpage() { if (G.pi < G.pages.length - 1) { G.pi++; render(); } else finishStage(); },
+  say(b) { sayWord(+b.dataset.say); },
+  filter(b) { albumFilter = b.dataset.f; render(); },
+  toggle(b) { const k = b.dataset.k; S.settings[k] = !S.settings[k]; save(); render(); const n = document.getElementById('sw-' + k); if (n) n.focus(); if (k === 'sfx' && S.settings.sfx) Sfx.ok(); },
+  testvoice() { Speech.say("Hello! Let's play Word Bridge."); },
+  reset(b) {
+    const now = Date.now();
+    if (now - resetArmed < 4000) { const p = P(); p.stars = {}; p.learned = []; p.streak = { last: '', n: 0 }; p.last = null; resetArmed = 0; save(); render(); toast(t('sResetDone')); }
+    else { resetArmed = now; b.querySelector('span').textContent = t('sReset2'); }
+  },
+  pick(b) { S.cur = b.dataset.id; save(); go({ name: 'home' }); },
+  delp(b) {
+    if (b.dataset.armed) { S.players = S.players.filter(p => p.id !== b.dataset.id); save(); render(); }
+    else { b.dataset.armed = '1'; b.classList.add('danger'); b.style.width = 'auto'; b.style.padding = '0 10px'; b.textContent = t('del2'); }
+  },
+  av(b) { newAv = b.dataset.av; app.querySelectorAll('.avs button').forEach(x => x.classList.toggle('on', x === b)); },
+  addp() {
+    if (S.players.length >= 6) return;
+    const inp = document.getElementById('pl-name'); let n = 1; while (S.players.some(p => p.id === 'p' + n)) n++;
+    const name = (inp && inp.value.trim()) || (t('player') + ' ' + (S.players.length + 1));
+    S.players.push(newPlayer('p' + n, name.slice(0, 14), newAv)); S.cur = 'p' + n; save(); go({ name: 'home' });
+  },
+};
+app.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-act]'); if (!b || b.disabled) return;
+  const fn = ACT[b.dataset.act]; if (fn) fn(b, e);
+});
+app.addEventListener('change', (e) => {
+  if (e.target && e.target.dataset && e.target.dataset.change === 'voice') { S.settings.voice = e.target.value; Speech.repick(); save(); Speech.say('Hello!'); }
+});
+window.addEventListener('pointerdown', () => { Speech.unlock(); Sfx.unlock(); }, { once: true, capture: true });
+let rz = 0;
+window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (route.name === 'play' && board && G) drawBridges(); }, 80); });
+
+/* ---------- confetti ---------- */
+function confetti() {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const c = document.getElementById('fx'), ctx = c.getContext('2d'), dpr = Math.min(2, window.devicePixelRatio || 1);
+  c.width = window.innerWidth * dpr; c.height = window.innerHeight * dpr;
+  const cols = ['#FFC83D', '#FF9EC0', '#5BCBF5', '#7EDC6A', '#B9A2FF', '#FF8A6B'];
+  const ps = []; for (let i = 0; i < 90; i++) ps.push({ x: Math.random() * c.width, y: -20 - Math.random() * c.height * 0.4, vx: (Math.random() - 0.5) * 3 * dpr, vy: (2 + Math.random() * 4) * dpr, s: (5 + Math.random() * 7) * dpr, r: Math.random() * 6, vr: (Math.random() - 0.5) * 0.3, c: cols[Math.random() * cols.length | 0] });
+  const t0 = performance.now();
+  (function frame(now) {
+    const el = now - t0; ctx.clearRect(0, 0, c.width, c.height);
+    if (el > 2600) return;
+    ps.forEach(p => { p.x += p.vx; p.y += p.vy; p.r += p.vr; ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.r); ctx.fillStyle = p.c; ctx.globalAlpha = Math.max(0, 1 - el / 2600); ctx.fillRect(-p.s / 2, -p.s / 3, p.s, p.s * 0.66); ctx.restore(); });
+    requestAnimationFrame(frame);
+  })(t0);
+}
+
+/* ---------- boot ---------- */
+applyLang();
+render();
+Cloud.init();
+window.__wb = { state: () => S, words: W.length };
+})();
+
+</script>
+</body>
+</html>
